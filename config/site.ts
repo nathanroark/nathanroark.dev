@@ -13,7 +13,6 @@ export const siteConfig = {
     },
   ],
   links: {
-    twitter: "https://twitter.com/nathanroark",
     github: "https://github.com/nathanroark",
   },
 }
