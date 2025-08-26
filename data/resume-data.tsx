@@ -5,7 +5,8 @@ export const RESUME_DATA = {
   initials: "NR",
   location: "Huntsville, AL",
   locationLink: "https://www.google.com/maps/place/Huntsville",
-  about: "Software Engineer • Full‑Stack Developer • Embedded Systems",
+  // about: "Software Engineer • Full‑Stack Developer • Embedded Systems",
+  about: "Software Engineer",
   summary:
     "Full‑stack and systems engineer with 4+ years of professional experience building mission‑critical apps and simulations. I work primarily with TypeScript/React and C++/Rust, and I hold an active Secret security clearance.",
   avatarUrl: "it-me.png",
