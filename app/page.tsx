@@ -13,11 +13,13 @@ export default function Page() {
       <section className="mx-auto w-full max-w-2xl space-y-8 print:space-y-6">
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-1.5">
-            <h1 className="text-2xl font-bold">{RESUME_DATA.name}</h1>
-            <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground">
+            <h1 className="text-pretty text-4xl font-bold">
+              {RESUME_DATA.name}
+            </h1>
+            <p className="max-w-md text-pretty font-mono text-2xl text-muted-foreground">
               {RESUME_DATA.about}
             </p>
-            <p className="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
+            <p className="max-w-md items-center text-pretty font-mono text-sm text-muted-foreground">
               <a
                 className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
                 href={RESUME_DATA.locationLink}
@@ -101,7 +103,7 @@ export default function Page() {
                     <h3 className="font-semibold leading-none">
                       {education.school}
                     </h3>
-                    <div className="text-sm tabular-nums text-gray-500">
+                    <div className="text-sm tabular-nums text-muted-foreground">
                       {education.year}
                     </div>
                   </div>
@@ -109,7 +111,7 @@ export default function Page() {
                 <CardContent className="mt-2">
                   <div className="flex items-center justify-between gap-x-2 ">
                     <h3 className="leading-none">{education.degree}</h3>
-                    <div className="text-sm tabular-nums text-gray-500">
+                    <div className="text-sm tabular-nums text-muted-foreground">
                       {education.extra}
                     </div>
                   </div>
@@ -142,7 +144,7 @@ export default function Page() {
                         ))}
                       </span>
                     </h3>
-                    <div className="text-sm tabular-nums text-gray-500">
+                    <div className="text-sm tabular-nums text-muted-foreground">
                       {work.start} - {work.end}
                     </div>
                   </div>
@@ -152,7 +154,7 @@ export default function Page() {
                   </h4>
                 </CardHeader>
                 <CardContent className="text-xs">
-                  <ul className="list-outside list-disc space-y-2 px-2">
+                  <ul className="list-outside list-disc space-y-2 text-pretty px-2 font-mono text-muted-foreground">
                     {work.bullets.map((bullet) => (
                       <li key={bullet}>{bullet}</li>
                     ))}
