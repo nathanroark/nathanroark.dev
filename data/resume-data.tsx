@@ -46,7 +46,7 @@ export const RESUME_DATA = {
     {
       company: "UAH",
       link: "https://www.uah.edu/",
-      badges: ["Research", "Modeling & Sim", "Geospatial"],
+      badges: ["M&S", "Geospatial"],
       title: "Researcher",
       start: "May 2025",
       end: "Present",
@@ -57,7 +57,7 @@ export const RESUME_DATA = {
     {
       company: "Trideum",
       link: "https://www.trideum.com/",
-      badges: ["Modeling & Sim", "AI/ML", "Embedded Systems"],
+      badges: ["M&S", "AI/ML", "Embedded Systems"],
       title: "Software Engineer",
       start: "March 2021",
       end: "Present",
