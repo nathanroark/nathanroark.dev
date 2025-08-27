@@ -5,8 +5,7 @@ import { siteConfig } from "@/config/site"
 import { fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
-import { ThemeProvider } from "@/components/theme-provider" 
-
+import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://nathanroark.dev"),
@@ -14,7 +13,7 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  title:  siteConfig.name,
+  title: siteConfig.name,
   description: siteConfig.description,
   keywords: [
     "Telperion",
