@@ -16,7 +16,7 @@ export default function Page() {
             <h1 className="text-pretty text-4xl font-bold">
               {RESUME_DATA.name}
             </h1>
-            <p className="max-w-md text-pretty font-mono text-xl text-muted-foreground">
+            <p className="max-w-md text-pretty font-mono text-lg text-muted-foreground">
               {RESUME_DATA.about}
             </p>
             <p className="max-w-md items-center text-pretty font-mono text-sm text-muted-foreground">

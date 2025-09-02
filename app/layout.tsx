@@ -1,5 +1,5 @@
 import "@/styles/globals.css"
-import { Metadata, Viewport } from "next"
+import { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/react"
 import { siteConfig } from "@/config/site"
 import { fontSans } from "@/lib/fonts"
@@ -8,22 +8,14 @@ import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nathanroark.dev"),
+  metadataBase: new URL(siteConfig.url),
   robots: {
     index: true,
     follow: true,
   },
   title: siteConfig.name,
   description: siteConfig.description,
-  keywords: [
-    "Telperion",
-    "Web Development",
-    "Software Development",
-    "Software Engineering",
-    "Engineering",
-    "Contractor",
-    "Consultant",
-  ],
+  keywords: siteConfig.keywords,
   authors: [
     {
       name: "Nathan Roark",
