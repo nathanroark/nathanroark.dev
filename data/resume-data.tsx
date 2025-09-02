@@ -8,7 +8,7 @@ export const RESUME_DATA = {
   // about: "Software Engineer • Full‑Stack Developer • Embedded Systems",
   about: "Software Engineer",
   summary:
-    "Software engineer with 4+ years of professional experience building mission‑critical apps and simulations. I work primarily with TypeScript/React and C++/Rust, and I hold an active Secret security clearance.",
+    "Software engineer with 4+ years of professional experience building mission‑critical apps and simulations. I work primarily with TypeScript/React and C++/Rust",
   avatarUrl: "it-me.png",
   personalWebsiteUrl: "https://nathanroark.dev",
   contact: {
