@@ -12,7 +12,6 @@ export const RESUME_DATA = {
   avatarUrl: "it-me.png",
   personalWebsiteUrl: "https://nathanroark.dev",
   contact: {
-    email: "nathanroark@protonmail.com",
     social: [
       {
         name: "GitHub",
