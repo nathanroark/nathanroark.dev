@@ -1,0 +1,59 @@
+---
+import Badge from "./ui/Badge.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  tags: readonly string[];
+  link?: string;
+}
+
+const { title, description, tags, link } = Astro.props;
+---
+
+<div
+  class="flex flex-col overflow-hidden rounded-lg border border-muted bg-card p-3"
+>
+  <div class="flex flex-col space-y-1.5">
+    <div class="space-y-1">
+      <h3 class="text-base font-semibold leading-none tracking-tight">
+        {
+          link ? (
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-1 hover:underline"
+            >
+              {title}
+              <span class="size-1 rounded-full bg-green-500" />
+            </a>
+          ) : (
+            title
+          )
+        }
+      </h3>
+      {
+        link && (
+          <div class="hidden font-mono text-xs underline print:block">
+            {link.replace("https://", "").replace("www.", "").replace("/", "")}
+          </div>
+        )
+      }
+      <p class="font-mono text-xs text-muted-foreground">
+        {description}
+      </p>
+    </div>
+  </div>
+  <div class="mt-auto flex pt-4">
+    <div class="flex flex-wrap gap-1">
+      {
+        tags.map((tag) => (
+          <Badge variant="secondary" class="px-1 py-0 text-[10px]">
+            {tag}
+          </Badge>
+        ))
+      }
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+---
+interface Props {
+  src: string;
+  alt: string;
+  fallback: string;
+  class?: string;
+}
+
+const { src, alt, fallback, class: className = "" } = Astro.props;
+---
+
+<div
+  class:list={[
+    "relative flex shrink-0 overflow-hidden rounded-full",
+    className,
+  ]}
+>
+  <img
+    src={src}
+    alt={alt}
+    class="aspect-square h-full w-full object-cover"
+    onerror={`this.style.display='none'; this.nextElementSibling.style.display='flex';`}
+  />
+  <div
+    class="hidden h-full w-full items-center justify-center rounded-full bg-muted text-muted-foreground font-medium"
+  >
+    {fallback}
+  </div>
+</div>

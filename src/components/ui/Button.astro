@@ -1,0 +1,50 @@
+---
+interface Props {
+  variant?: "default" | "outline" | "ghost";
+  size?: "default" | "sm" | "icon";
+  class?: string;
+  href?: string;
+}
+
+const {
+  variant = "default",
+  size = "default",
+  class: className = "",
+  href,
+} = Astro.props;
+
+const variants = {
+  default: "bg-primary text-primary-foreground hover:bg-primary/90",
+  outline:
+    "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+  ghost: "hover:bg-accent hover:text-accent-foreground",
+};
+
+const sizes = {
+  default: "h-10 px-4 py-2",
+  sm: "h-9 px-3",
+  icon: "h-10 w-10",
+};
+
+const baseClasses =
+  "inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50";
+
+const Element = href ? "a" : "button";
+---
+
+{
+  href ? (
+    <a
+      href={href}
+      class:list={[baseClasses, variants[variant], sizes[size], className]}
+    >
+      <slot />
+    </a>
+  ) : (
+    <button
+      class:list={[baseClasses, variants[variant], sizes[size], className]}
+    >
+      <slot />
+    </button>
+  )
+}
