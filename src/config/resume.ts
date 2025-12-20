@@ -23,8 +23,17 @@ export const Resume = {
     ],
   },
   certifications: [
-    "CompTIA Security+",
-    "Microsoft Certified: Azure Fundamentals",
+    {
+      name: "CompTIA Security+",
+      image: "/certs/comptia-security-ce-certification.png",
+      link: "https://www.credly.com/badges/56b33a6d-2577-4fea-ba33-2c463e140be2/public_url",
+    },
+    {
+      // name: "Microsoft Certified: Azure Fundamentals",
+      name: "MS Azure Fundamentals",
+      image: "/certs/ms-azure-fundamentals.png",
+      link: "https://www.credly.com/badges/your-badge-id",
+    },
   ],
   education: [
     {

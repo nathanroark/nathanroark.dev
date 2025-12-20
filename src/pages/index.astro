@@ -93,14 +93,14 @@ import LinkedIn from "@/components/icons/linked-in.astro";
               <CardHeader>
                 <div class="flex items-center justify-between gap-x-2 text-base">
                   <h3 class="font-semibold leading-none">{education.degree}</h3>
-                  <div class="text tabular-nums text-muted-foreground">
-                    {education.extra}
-                  </div>
+                  <div class="text tabular-nums">{education.extra}</div>
                 </div>
               </CardHeader>
               <CardContent class="mt-2">
                 <div class="flex items-center justify-between gap-x-2">
-                  <h3 class="leading-none text-sm">{education.school}</h3>
+                  <h3 class="leading-none text-sm text-muted-foreground">
+                    {education.school}
+                  </h3>
                   <div class="text-sm tabular-nums text-muted-foreground">
                     {education.year}
                   </div>
@@ -114,12 +114,24 @@ import LinkedIn from "@/components/icons/linked-in.astro";
       <!-- Certifications -->
       <Section>
         <h2 class="text-xl font-bold">Certifications</h2>
-        <div class="flex flex-wrap gap-2">
+        <div class="flex flex-wrap gap-4">
           {
             Resume.certifications.map((cert) => (
-              <Badge variant="secondary" class="text-sm">
-                {cert}
-              </Badge>
+              <a
+                href={cert.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="group flex flex-col items-center gap-2 rounded-lg border bg-card p-4 transition-all hover:shadow-md print:border-0 print:p-2"
+              >
+                <img
+                  src={cert.image}
+                  alt={cert.name}
+                  class="h-24 w-24 object-contain"
+                />
+                <span class="text-center text-xs font-medium text-muted-foreground group-hover:text-foreground">
+                  {cert.name}
+                </span>
+              </a>
             ))
           }
         </div>
