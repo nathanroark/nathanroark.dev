@@ -1,9 +1,9 @@
-export const RESUME_DATA = {
+export const Resume = {
   name: "Nathan Roark",
   initials: "NR",
   location: "Seattle, WA",
   locationLink: "https://www.google.com/maps/place/Seattle,+WA",
-  about: "Software Engineer",
+  about: "Full Stack Software Engineer",
   summary:
     "Software engineer with 5+ years of professional experience building mission-critical applications, simulations, and tools. I work primarily with TypeScript/React and C++/Rust",
   avatarUrl: "/it-me.jpeg",
@@ -22,6 +22,10 @@ export const RESUME_DATA = {
       },
     ],
   },
+  certifications: [
+    "CompTIA Security+",
+    "Microsoft Certified: Azure Fundamentals",
+  ],
   education: [
     {
       id: "uah-mscs-2025",
@@ -40,51 +44,95 @@ export const RESUME_DATA = {
   ],
   work: [
     {
-      company: "UAH",
-      link: "https://www.uah.edu/",
-      badges: ["M&S", "Geospatial"],
-      title: "Researcher",
-      start: "May 2025",
+      company: "Ignite",
+      link: "https://www.intrepidcontrol.com/ignite/",
+      badges: ["Full Stack"],
+      title: "Full Stack Software Engineer",
+      start: "October 2025",
       end: "Present",
       bullets: [
-        "Engineered a high-fidelity 3D visualization platform integrating NASA Earthdata with cellular automata modeling to reconstruct natural disasters in near-real time (Rust, Unity, C#, Bash).",
+        "Updated tooling and software libraries used by several applications to set up the future of development for success (React, Java, SQL).",
+      ],
+    },
+    {
+      company: "UAH",
+      link: "https://www.uah.edu/",
+      badges: ["Research", "Geospatial"],
+      title: "Researcher",
+      start: "May 2025",
+      end: "December 2025",
+      bullets: [
+        "Engineered a high-fidelity immersive 3D visualization application using NASA Earthdata to create an accurate retelling of events of different natural disasters using real-time acquisition data (Unity, C#, Python, Bash).",
       ],
     },
     {
       company: "Trideum",
       link: "https://www.trideum.com/",
-      badges: ["M&S", "AI/ML", "Embedded Systems"],
+      badges: ["M&S", "AI/ML", "Embedded"],
       title: "Software Engineer",
       start: "March 2021",
-      end: "Present",
+      end: "September 2025",
       bullets: [
-        "Architected and led frontend for an AI testing application used in operational testing (TypeScript, React, gRPC, REST, PostgreSQL).",
-        "Built a visualization app for AI-controlled FPGA-based aircraft simulations, rendering complex flight telemetry (TypeScript, React, Tailwind).",
-        "Developed a protocol translation system enabling interoperability between JREAP, Link16, and VMF standards (C++, React, TypeScript).",
-        "Created robust translation software converting JREAP/Link16/VMF to DIS for simulation interoperability, used in worldwide distributed test events (C++, Qt).",
-        "Implemented radar message translation capabilities to enhance realism for large-scale networked training exercises with 2,000+ participants (C++, Qt).",
-        "Built a streamlined note-taking and sharing tool for cybersecurity tabletop exercises to improve efficiency at scale (TypeScript, React, Tailwind).",
-        "Developed intuitive UI components for cybersecurity risk assessments and mission planning workflows (Unity, C#).",
+        "Architected and led a team in the development of a comprehensive AI testing application supporting operational testing of advanced military systems (TypeScript, React, gRPC, REST, PostgreSQL).",
+        "Architected and developed a visualization application displaying complex flight data from an AI-controlled FPGA-based aircraft simulation system (TypeScript, React, Tailwind).",
+        "Designed and developed a visualization application to assist Systems Engineers to examine and understand complex system designs such as an Apache AH-64E through an interactive medium (TypeScript, Svelte, D3, Tailwind).",
+        "Architected and developed a protocol translation application enabling interoperability between JREAP, Link16, and VMF military communication standards (C++, React, TypeScript).",
+        "Built robust translation software converting military protocols (JREAP, Link16, VMF) into DIS formats for simulation interoperability, used in multiple distributed test events involving hundreds of people across the world (C++, Qt).",
+        "Implemented radar message translation capabilities into simulation systems, enhancing realism for large-scale networked training exercises involving 2,000+ participants (C++, Qt).",
+        "Architected and developed a streamlined note-taking tool designed for cybersecurity tabletop exercises, improving efficiency and collaboration (TypeScript, React, Tailwind).",
+        "Developed intuitive UI components for cybersecurity risk assessments and mission planning, enhancing usability and productivity (Unity, C#).",
+      ],
+    },
+    {
+      company: "a.i. Solutions",
+      link: "https://ai-solutions.com/",
+      badges: ["Internship"],
+      title: "Computer Engineer Intern",
+      start: "Summer 2016",
+      end: "Summer 2016",
+      bullets: [
+        "Designed an internal inventory management tool for hardware tracking, achieving a 100% reduction in asset discrepancies during quarterly audits (C++, Qt, SQL).",
       ],
     },
   ],
-  skills: [
+  skills: {
+    languages: ["TypeScript", "C++", "Python", "JavaScript"],
+    frameworks: ["React", "Astro", "Svelte", "Next.js", "Tailwind", "Vite"],
+    tools: [
+      "PostgreSQL",
+      "Docker",
+      "Kubernetes",
+      "Git",
+      "Qt",
+      "Unity",
+      "FPGA",
+      "Verilog",
+      "Unix",
+    ],
+    protocols: [
+      "REST",
+      "gRPC",
+      "Websockets",
+      "XML",
+      "JSON",
+      "Link16",
+      "JREAP",
+      "VMF",
+      "DIS",
+    ],
+  },
+  // Flattened skills for badge display
+  skillsList: [
     "TypeScript",
-    "JavaScript",
     "C++",
-    "Rust",
     "Python",
-    "Go",
-    "R",
-    "Julia",
+    "JavaScript",
     "React",
+    "Astro",
     "Svelte",
     "Next.js",
-    "Node.js",
     "Tailwind",
     "Vite",
-    "gRPC",
-    "REST",
     "PostgreSQL",
     "Docker",
     "Kubernetes",
@@ -93,12 +141,34 @@ export const RESUME_DATA = {
     "Unity",
     "FPGA",
     "Verilog",
+    "Unix",
+    "REST",
+    "gRPC",
+    "Websockets",
+  ],
+  publications: [
+    {
+      authors:
+        "E. Michael Bearss, Nathan Roark, Juan G. Alonso Guzman, Vi Dang, Suraj Regmi, Mikel D. Petty",
+      title: "Using Machine Learning to Win Strike Force One",
+      venue: "Peer-reviewed paper presented at AlaSim 2022",
+    },
   ],
   projects: [
     {
+      title: "Deep Learning Signal Classifier",
+      description:
+        "Implemented CNN, LSTM, and hybrid neural networks in PyTorch for automatic modulation classification, achieving 87% accuracy across 11 radio signal types.",
+      techStack: ["PyTorch", "NumPy", "scikit-learn", "Python"],
+      link: {
+        label: "github.com",
+        href: "https://github.com/nathanroark/deep-learning-signal-classifier",
+      },
+    },
+    {
       title: "SeattleSafeEats",
       description:
-        "Built the frontend for all pages, animations, and components.",
+        "Designed and built the frontend for all pages, animations, and components.",
       techStack: ["TypeScript", "Svelte", "Tailwind"],
       link: {
         label: "seattlesafeeats.com",
@@ -108,7 +178,7 @@ export const RESUME_DATA = {
     {
       title: "TypeHero",
       description:
-        "Implemented the browser code editor and authored several type challenges.",
+        "Built the browser code editor and authored several type challenges.",
       techStack: ["TypeScript", "Next.js", "React", "Tailwind"],
       link: {
         label: "typehero.dev",
@@ -145,10 +215,10 @@ export const RESUME_DATA = {
       techStack: [
         "Next.js",
         "React",
-        "immer",
-        "Styled Components",
         "TypeScript",
         "Tailwind",
+        "immer",
+        "Styled Components",
       ],
       link: {
         label: "life.nathanroark.dev",
@@ -193,3 +263,5 @@ export const RESUME_DATA = {
     },
   ],
 } as const;
+
+export default Resume;

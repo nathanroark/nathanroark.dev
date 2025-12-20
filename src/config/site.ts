@@ -4,8 +4,7 @@ export const siteConfig = {
   name: "Nathan Roark",
   url: "https://nathanroark.dev",
   ogImage: "https://nathanroark.dev/og.png",
-  description:
-    "Software Engineer passionate about building and learning new things.",
+  description: "Full Stack Software Engineer",
   mainNav: [
     {
       title: "Home",
@@ -21,6 +20,10 @@ export const siteConfig = {
     "Roark",
     "Software Engineer",
     "Full Stack Engineer",
+    "Full Stack Developer",
+    "Full Stack Software Engineer",
+    "Full Stack Software Developer",
+    "Frontend Engineer",
     "Embedded Engineer",
     "Embedded",
     "Embedded Systems",
