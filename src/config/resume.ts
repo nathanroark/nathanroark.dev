@@ -30,14 +30,14 @@ export const Resume = {
     {
       id: "uah-mscs-2025",
       school: "University of Alabama in Huntsville",
-      degree: "M.S. in Computer Science",
+      degree: "Masters in Computer Science",
       year: "December 2025",
       extra: "GPA 4.0",
     },
     {
       id: "uah-bsce-2020",
       school: "University of Alabama in Huntsville",
-      degree: "B.S. in Computer Engineering",
+      degree: "Bachelors in Computer Engineering",
       year: "December 2020",
       extra: "GPA 3.6",
     },

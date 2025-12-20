@@ -10,6 +10,7 @@ import Section from "../components/ui/Section.astro";
 import Icon from "../components/ui/Icon.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import Resume from "../config/resume.ts";
+import LinkedIn from "@/components/icons/linked-in.astro";
 ---
 
 <Layout>
@@ -52,10 +53,15 @@ import Resume from "../config/resume.ts";
                   href={social.url}
                   class="size-8"
                 >
-                  <Icon
-                    name={social.icon as "github" | "linkedin"}
-                    class="size-4"
-                  />
+                  {social.name === "GitHub" ? (
+                    <Icon name="github" class="size-4" />
+                  ) : social.name === "LinkedIn" ? (
+                    <LinkedIn
+                      width={24}
+                      height={24}
+                      class="size-4 fill-primary"
+                    />
+                  ) : null}
                 </Button>
               ))
             }
@@ -78,6 +84,33 @@ import Resume from "../config/resume.ts";
         </p>
       </Section>
 
+      <!-- Education -->
+      <Section>
+        <h2 class="text-xl font-bold">Education</h2>
+        {
+          Resume.education.map((education) => (
+            <Card>
+              <CardHeader>
+                <div class="flex items-center justify-between gap-x-2 text-base">
+                  <h3 class="font-semibold leading-none">{education.degree}</h3>
+                  <div class="text tabular-nums text-muted-foreground">
+                    {education.extra}
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent class="mt-2">
+                <div class="flex items-center justify-between gap-x-2">
+                  <h3 class="leading-none text-sm">{education.school}</h3>
+                  <div class="text-sm tabular-nums text-muted-foreground">
+                    {education.year}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))
+        }
+      </Section>
+
       <!-- Certifications -->
       <Section>
         <h2 class="text-xl font-bold">Certifications</h2>
@@ -90,33 +123,6 @@ import Resume from "../config/resume.ts";
             ))
           }
         </div>
-      </Section>
-
-      <!-- Education -->
-      <Section>
-        <h2 class="text-xl font-bold">Education</h2>
-        {
-          Resume.education.map((education) => (
-            <Card>
-              <CardHeader>
-                <div class="flex items-center justify-between gap-x-2 text-base">
-                  <h3 class="font-semibold leading-none">{education.school}</h3>
-                  <div class="text-sm tabular-nums text-muted-foreground">
-                    {education.year}
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent class="mt-2">
-                <div class="flex items-center justify-between gap-x-2">
-                  <h3 class="leading-none">{education.degree}</h3>
-                  <div class="text-sm tabular-nums text-muted-foreground">
-                    {education.extra}
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))
-        }
       </Section>
 
       <!-- Skills -->
