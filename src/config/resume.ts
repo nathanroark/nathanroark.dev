@@ -89,7 +89,7 @@ export const Resume = {
       badges: ["Internship"],
       title: "Computer Engineer Intern",
       start: "Summer 2016",
-      end: "Summer 2016",
+      // end: "Summer 2016",
       bullets: [
         "Designed an internal inventory management tool for hardware tracking, achieving a 100% reduction in asset discrepancies during quarterly audits (C++, Qt, SQL).",
       ],

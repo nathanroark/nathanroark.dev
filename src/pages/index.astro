@@ -191,12 +191,13 @@ import LinkedIn from "@/components/icons/linked-in.astro";
                     ))}
                   </span>
                   <div class="text-xs tabular-nums text-muted-foreground">
-                    {work.start} - {work.end}
+                    {work.start}
+                    {"end" in work && work.end ? ` - ${work.end}` : ""}
                   </div>
                 </div>
               </CardHeader>
               <CardContent class="text-xs">
-                <ul class="list-outside list-disc space-y-2 text-pretty px-2 font-mono text-muted-foreground">
+                <ul class="list-outside list-disc space-y-2 text-pretty px-2 pl-4 font-mono text-muted-foreground">
                   {work.bullets.map((bullet) => (
                     <li>{bullet}</li>
                   ))}
