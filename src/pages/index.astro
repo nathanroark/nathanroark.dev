@@ -169,7 +169,7 @@ import LinkedIn from "@/components/icons/linked-in.astro";
         <h2 class="text-xl font-bold">Work Experience</h2>
         {
           Resume.work.map((work) => (
-            <Card>
+            <Card class="space-y-2">
               <CardHeader>
                 <div class="flex items-center justify-between gap-x-2 text-base">
                   <h3 class="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
@@ -181,19 +181,19 @@ import LinkedIn from "@/components/icons/linked-in.astro";
                     >
                       {work.company}
                     </a>
-                    <span class="inline-flex gap-x-1">
-                      {work.badges.map((badge) => (
-                        <Badge variant="secondary" class="align-middle text-xs">
-                          {badge}
-                        </Badge>
-                      ))}
-                    </span>
+                    <h4 class="font-mono leading-none">{work.title}</h4>
                   </h3>
-                  <div class="text-sm tabular-nums text-muted-foreground">
+                </div>
+                <div class="flex items-center justify-between gap-x-2 text-base">
+                  <span class="inline-flex gap-x-1">
+                    {work.badges.map((badge) => (
+                      <Badge variant="brutal">{badge}</Badge>
+                    ))}
+                  </span>
+                  <div class="text-xs tabular-nums text-muted-foreground">
                     {work.start} - {work.end}
                   </div>
                 </div>
-                <h4 class="font-mono text-sm leading-none">{work.title}</h4>
               </CardHeader>
               <CardContent class="text-xs">
                 <ul class="list-outside list-disc space-y-2 text-pretty px-2 font-mono text-muted-foreground">

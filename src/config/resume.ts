@@ -97,13 +97,12 @@ export const Resume = {
   ],
   skills: {
     languages: ["TypeScript", "C++", "Python", "JavaScript"],
-    frameworks: ["React", "Astro", "Svelte", "Next.js", "Tailwind", "Vite"],
+    frameworks: ["React", "Astro", "Svelte", "Next.js", "Tailwind", "Vite", "Qt"],
     tools: [
       "PostgreSQL",
       "Docker",
       "Kubernetes",
       "Git",
-      "Qt",
       "Unity",
       "FPGA",
       "Verilog",
@@ -121,31 +120,6 @@ export const Resume = {
       "DIS",
     ],
   },
-  // Flattened skills for badge display
-  skillsList: [
-    "TypeScript",
-    "C++",
-    "Python",
-    "JavaScript",
-    "React",
-    "Astro",
-    "Svelte",
-    "Next.js",
-    "Tailwind",
-    "Vite",
-    "PostgreSQL",
-    "Docker",
-    "Kubernetes",
-    "Git",
-    "Qt",
-    "Unity",
-    "FPGA",
-    "Verilog",
-    "Unix",
-    "REST",
-    "gRPC",
-    "Websockets",
-  ],
   publications: [
     {
       authors:
@@ -158,8 +132,8 @@ export const Resume = {
     {
       title: "Deep Learning Signal Classifier",
       description:
-        "Implemented CNN, LSTM, and hybrid neural networks in PyTorch for automatic modulation classification, achieving 87% accuracy across 11 radio signal types.",
-      techStack: ["PyTorch", "NumPy", "scikit-learn", "Python"],
+        "Implemented CNN, LSTM, and hybrid neural networks in PyTorch for automatic modulation classification.",
+      techStack: ["PyTorch", "NumPy", "Python"],
       link: {
         label: "github.com",
         href: "https://github.com/nathanroark/deep-learning-signal-classifier",
