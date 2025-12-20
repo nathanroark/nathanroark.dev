@@ -46,7 +46,7 @@ export const Resume = {
     {
       company: "Ignite",
       link: "https://www.intrepidcontrol.com/ignite/",
-      badges: ["Full Stack"],
+      badges: ["Full Stack Software Development"],
       title: "Full Stack Software Engineer",
       start: "October 2025",
       end: "Present",
@@ -57,7 +57,7 @@ export const Resume = {
     {
       company: "UAH",
       link: "https://www.uah.edu/",
-      badges: ["Research", "Geospatial"],
+      badges: ["Game Design", "Research", "Geospatial"],
       title: "Researcher",
       start: "May 2025",
       end: "December 2025",
@@ -68,7 +68,7 @@ export const Resume = {
     {
       company: "Trideum",
       link: "https://www.trideum.com/",
-      badges: ["M&S", "AI/ML", "Embedded"],
+      badges: ["Full Stack Software Development", "Modeling and Simulation", "AI/ML"],
       title: "Software Engineer",
       start: "March 2021",
       end: "September 2025",
