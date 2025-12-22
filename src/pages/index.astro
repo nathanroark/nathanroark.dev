@@ -93,7 +93,9 @@ import LinkedIn from "@/components/icons/linked-in.astro";
               <CardHeader>
                 <div class="flex items-center justify-between gap-x-2 text-base">
                   <h3 class="font-semibold leading-none">{education.degree}</h3>
-                  <div class="text tabular-nums">{education.extra}</div>
+                  <div class="text tabular-nums text-muted-foreground font-mono">
+                    {education.extra}
+                  </div>
                 </div>
               </CardHeader>
               <CardContent class="mt-2">
