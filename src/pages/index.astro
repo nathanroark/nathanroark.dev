@@ -15,7 +15,7 @@ import LinkedIn from "@/components/icons/linked-in.astro";
 
 <Layout>
   <main
-    class="container relative mx-auto scroll-my-12 overflow-auto py-4 md:py-16 print:py-12"
+    class="container relative mx-auto overflow-auto py-4 md:py-16 print:py-12"
   >
     <section class="mx-auto w-full max-w-3xl space-y-8 print:space-y-6">
       <!-- Header -->
@@ -247,11 +247,9 @@ import LinkedIn from "@/components/icons/linked-in.astro";
       </Section>
 
       <!-- Projects -->
-      <Section class="print-force-new-page scroll-mb-16">
+      <Section>
         <h2 class="text-xl font-bold">Projects</h2>
-        <div
-          class="-mx-3 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 print:gap-2"
-        >
+        <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
           {
             Resume.projects.map((project) => (
               <ProjectCard
