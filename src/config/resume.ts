@@ -174,7 +174,7 @@ export const Resume = {
       techStack: ["Svelte", "SvelteKit", "TypeScript", "Tailwind"],
       link: {
         label: "pong-wars.nathanroark.dev",
-        href: "https://pong-wars.nathanroark.dev",
+        href: "https://github.com/nathanroark/pong-wars",
       },
     },
     {
@@ -205,7 +205,7 @@ export const Resume = {
       ],
       link: {
         label: "life.nathanroark.dev",
-        href: "https://life.nathanroark.dev",
+        href: "https://github.com/nathanroark/life-next",
       },
     },
     {
@@ -214,7 +214,7 @@ export const Resume = {
       techStack: ["Next.js", "TypeScript", "React", "D3", "Tailwind"],
       link: {
         label: "data-viz.nathanroark.dev",
-        href: "https://data-viz.nathanroark.dev",
+        href: "https://github.com/nathanroark/data-viz-next",
       },
     },
     {
@@ -223,7 +223,7 @@ export const Resume = {
       techStack: ["Next.js", "React", "TypeScript"],
       link: {
         label: "wolf-sheep-predation.nathanroark.dev",
-        href: "https://wolf-sheep-predation.nathanroark.dev",
+        href: "https://github.com/nathanroark/wolf-sheep-predation",
       },
     },
     {
