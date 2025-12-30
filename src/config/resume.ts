@@ -148,26 +148,26 @@ export const Resume = {
         href: "https://github.com/nathanroark/deep-learning-signal-classifier",
       },
     },
-    {
-      title: "SeattleSafeEats",
-      description:
-        "Designed and built the frontend for all pages, animations, and components.",
-      techStack: ["TypeScript", "Svelte", "Tailwind"],
-      link: {
-        label: "seattlesafeeats.com",
-        href: "https://seattlesafeeats.com",
-      },
-    },
-    {
-      title: "TypeHero",
-      description:
-        "Built the browser code editor and authored several type challenges.",
-      techStack: ["TypeScript", "Next.js", "React", "Tailwind"],
-      link: {
-        label: "typehero.dev",
-        href: "https://typehero.dev",
-      },
-    },
+    // {
+    //   title: "SeattleSafeEats",
+    //   description:
+    //     "Designed and built the frontend for all pages, animations, and components.",
+    //   techStack: ["TypeScript", "Svelte", "Tailwind"],
+    //   link: {
+    //     label: "seattlesafeeats.com",
+    //     href: "https://seattlesafeeats.com",
+    //   },
+    // },
+    // {
+    //   title: "TypeHero",
+    //   description:
+    //     "Built the browser code editor and authored several type challenges.",
+    //   techStack: ["TypeScript", "Next.js", "React", "Tailwind"],
+    //   link: {
+    //     label: "typehero.dev",
+    //     href: "https://typehero.dev",
+    //   },
+    // },
     {
       title: "Pong Wars",
       description: "Pong Wars rendered on Canvas.",
@@ -189,7 +189,7 @@ export const Resume = {
       ],
       link: {
         label: "coverflow.nathanroark.dev",
-        href: "https://coverflow.nathanroark.dev",
+        href: "https://github.com/nathanroark/coverflow",
       },
     },
     {
