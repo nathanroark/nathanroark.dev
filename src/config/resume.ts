@@ -30,9 +30,9 @@ export const Resume = {
     },
     {
       // name: "Microsoft Certified: Azure Fundamentals",
-      name: "MS Azure Fundamentals",
+      name: "Azure Fundamentals",
       image: "/certs/ms-azure-fundamentals.png",
-      link: "https://www.credly.com/badges/your-badge-id",
+      link: "https://learn.microsoft.com/en-us/users/nathanroark/transcript/vnmx3szej6owgn3",
     },
   ],
   education: [
