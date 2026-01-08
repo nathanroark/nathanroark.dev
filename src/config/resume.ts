@@ -60,7 +60,7 @@ export const Resume = {
       start: "October 2025",
       end: "Present",
       bullets: [
-        "Updated and modernized the front end tooling for inherited legacy applications. Created a detailed system design document detailing the front end architecture for them to improve feasibility of future work. (React, Java, SQL).",
+        "Updated and modernized the front end tooling for inherited legacy applications. Created a detailed system design document detailing the front end architecture to streamline future development efforts. (React, Java, SQL).",
       ],
     },
     {
