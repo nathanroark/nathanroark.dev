@@ -5,7 +5,7 @@ export const Resume = {
   locationLink: "https://www.google.com/maps/place/Seattle,+WA",
   about: "Full Stack Software Engineer",
   summary:
-    "Software engineer with 5+ years of professional experience building mission-critical applications, simulations, and tools. I work primarily with TypeScript/React and C++/Rust",
+    "Software engineer with 5+ years of professional experience building mission-critical applications, simulations, and tools. I work primarily with TypeScript, React and C++",
   avatarUrl: "/it-me.jpeg",
   personalWebsiteUrl: "https://nathanroark.dev",
   contact: {
@@ -55,12 +55,12 @@ export const Resume = {
     {
       company: "Ignite",
       link: "https://www.intrepidcontrol.com/ignite/",
-      badges: ["Full Stack Software Development"],
+      badges: ["Full Stack Development", "Front End"],
       title: "Full Stack Software Engineer",
       start: "October 2025",
       end: "Present",
       bullets: [
-        "Updated tooling and software libraries used by several applications to set up the future of development for success (React, Java, SQL).",
+        "Updated and modernized the front end tooling for inherited legacy applications. Created a detailed system design document detailing the front end architecture for them to improve feasibility of future work. (React, Java, SQL).",
       ],
     },
     {
