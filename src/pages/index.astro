@@ -249,15 +249,24 @@ import LinkedIn from "@/components/icons/linked-in.astro";
       <!-- Projects -->
       <Section>
         <h2 class="text-xl font-bold">Projects</h2>
-        <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
+        <div class="space-y-6">
           {
-            Resume.projects.map((project) => (
-              <ProjectCard
-                title={project.title}
-                description={project.description}
-                tags={project.techStack}
-                link={project.link?.href}
-              />
+            Resume.project_groups.map((group) => (
+              <div class="space-y-3">
+                <h3 class="text-sm font-semibold text-muted-foreground">
+                  {group.group}
+                </h3>
+                <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
+                  {group.projects.map((project) => (
+                    <ProjectCard
+                      title={project.title}
+                      description={project.description}
+                      tags={project.techStack}
+                      link={project.link?.href}
+                    />
+                  ))}
+                </div>
+              </div>
             ))
           }
         </div>

@@ -77,7 +77,11 @@ export const Resume = {
     {
       company: "Trideum",
       link: "https://www.trideum.com/",
-      badges: ["Full Stack Software Development", "Modeling and Simulation", "AI/ML"],
+      badges: [
+        "Full Stack Software Development",
+        "Modeling and Simulation",
+        "AI/ML",
+      ],
       title: "Software Engineer",
       start: "March 2021",
       end: "September 2025",
@@ -106,7 +110,15 @@ export const Resume = {
   ],
   skills: {
     languages: ["TypeScript", "C++", "Python", "JavaScript"],
-    frameworks: ["React", "Astro", "Svelte", "Next.js", "Tailwind", "Vite", "Qt"],
+    frameworks: [
+      "React",
+      "Astro",
+      "Svelte",
+      "Next.js",
+      "Tailwind",
+      "Vite",
+      "Qt",
+    ],
     tools: [
       "PostgreSQL",
       "Docker",
@@ -137,112 +149,138 @@ export const Resume = {
       venue: "Peer-reviewed paper presented at AlaSim 2022",
     },
   ],
-  projects: [
+  project_groups: [
     {
-      title: "Deep Learning Signal Classifier",
-      description:
-        "Implemented CNN, LSTM, and hybrid neural networks in PyTorch for automatic modulation classification.",
-      techStack: ["PyTorch", "NumPy", "Python"],
-      link: {
-        label: "github.com",
-        href: "https://github.com/nathanroark/deep-learning-signal-classifier",
-      },
-    },
-    // {
-    //   title: "SeattleSafeEats",
-    //   description:
-    //     "Designed and built the frontend for all pages, animations, and components.",
-    //   techStack: ["TypeScript", "Svelte", "Tailwind"],
-    //   link: {
-    //     label: "seattlesafeeats.com",
-    //     href: "https://seattlesafeeats.com",
-    //   },
-    // },
-    // {
-    //   title: "TypeHero",
-    //   description:
-    //     "Built the browser code editor and authored several type challenges.",
-    //   techStack: ["TypeScript", "Next.js", "React", "Tailwind"],
-    //   link: {
-    //     label: "typehero.dev",
-    //     href: "https://typehero.dev",
-    //   },
-    // },
-    {
-      title: "Pong Wars",
-      description: "Pong Wars rendered on Canvas.",
-      techStack: ["Svelte", "SvelteKit", "TypeScript", "Tailwind"],
-      link: {
-        label: "pong-wars.nathanroark.dev",
-        href: "https://github.com/nathanroark/pong-wars",
-      },
-    },
-    {
-      title: "Coverflow",
-      description: "Demo site for a smooth coverflow UI.",
-      techStack: [
-        "Next.js",
-        "TypeScript",
-        "React",
-        "SASS",
-        "Styled Components",
+      group: "Full Stack Projects",
+      projects: [
+        {
+          title: "Open Data",
+          description:
+            "Access and visualize federal spending, public health metrics, economic indicators, and more—all from publically available cited sources.",
+          techStack: [
+            "Tanstack Start",
+            "TypeScript",
+            "React",
+            "Tailwind",
+            "D3",
+          ],
+          link: {
+            label: "opendata.foo",
+            href: "https://opendata.foo",
+          },
+        },
+        {
+          title: "Audio Visualizer",
+          description:
+            "Visualize audio input into the browser with various graphs.",
+          techStack: ["TypeScript", "React", "Tailwind"],
+          link: {
+            label: "audio-visualizer.nathanroark.dev",
+            href: "https://voice.nathanroark.dev",
+          },
+        },
+        {
+          title: "Pong Wars",
+          description: "Pong Wars rendered on Canvas.",
+          techStack: ["Svelte", "SvelteKit", "TypeScript", "Tailwind"],
+          link: {
+            label: "pong-wars.nathanroark.dev",
+            href: "https://github.com/nathanroark/pong-wars",
+          },
+        },
+        {
+          title: "Coverflow",
+          description: "Demo site for a smooth coverflow UI.",
+          techStack: [
+            "Next.js",
+            "TypeScript",
+            "React",
+            "SASS",
+            "Styled Components",
+          ],
+          link: {
+            label: "coverflow.nathanroark.dev",
+            href: "https://github.com/nathanroark/coverflow",
+          },
+        },
+        {
+          title: "Life",
+          description: "Conway's Game of Life.",
+          techStack: [
+            "Next.js",
+            "React",
+            "TypeScript",
+            "Tailwind",
+            "immer",
+            "Styled Components",
+          ],
+          link: {
+            label: "life.nathanroark.dev",
+            href: "https://github.com/nathanroark/life-next",
+          },
+        },
+        {
+          title: "Data Viz Demos",
+          description: "Custom D3 visualizations.",
+          techStack: ["Next.js", "TypeScript", "React", "D3", "Tailwind"],
+          link: {
+            label: "data-viz.nathanroark.dev",
+            href: "https://github.com/nathanroark/data-viz-next",
+          },
+        },
       ],
-      link: {
-        label: "coverflow.nathanroark.dev",
-        href: "https://github.com/nathanroark/coverflow",
-      },
     },
     {
-      title: "Life",
-      description: "Conway's Game of Life.",
-      techStack: [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Tailwind",
-        "immer",
-        "Styled Components",
+      group: "Artificial Intelligence Projects",
+      projects: [
+        {
+          title: "Deep Learning Signal Classifier",
+          description:
+            "Implemented, trained, and evaluated multiple variants of neural networks in PyTorch for automatic modulation classification.",
+          techStack: ["PyTorch", "NumPy", "Python"],
+          link: {
+            label: "github.com",
+            href: "https://github.com/nathanroark/deep-learning-signal-classifier",
+          },
+        },
       ],
-      link: {
-        label: "life.nathanroark.dev",
-        href: "https://github.com/nathanroark/life-next",
-      },
     },
     {
-      title: "Data Viz Demos",
-      description: "Custom D3 visualizations.",
-      techStack: ["Next.js", "TypeScript", "React", "D3", "Tailwind"],
-      link: {
-        label: "data-viz.nathanroark.dev",
-        href: "https://github.com/nathanroark/data-viz-next",
-      },
+      group: "Modeling and Simulation Projects",
+      projects: [
+        {
+          title: "Wolf Sheep Predation",
+          description: "Agent-based modeling simulation.",
+          techStack: ["Next.js", "React", "TypeScript"],
+          link: {
+            label: "wolf-sheep-predation.nathanroark.dev",
+            href: "https://github.com/nathanroark/wolf-sheep-predation",
+          },
+        },
+      ],
     },
     {
-      title: "Wolf Sheep Predation",
-      description: "Agent-based modeling simulation.",
-      techStack: ["Next.js", "React", "TypeScript"],
-      link: {
-        label: "wolf-sheep-predation.nathanroark.dev",
-        href: "https://github.com/nathanroark/wolf-sheep-predation",
-      },
-    },
-    {
-      title: "Blog",
-      description: "Static blog for media and notes.",
-      techStack: ["Astro", "TypeScript", "Tailwind", "Markdown"],
-      link: {
-        label: "nathanroark.com",
-        href: "https://nathanroark.com",
-      },
-    },
-    {
-      title: "CV",
-      description: "This website — my developer portfolio.",
-      techStack: ["Astro", "TypeScript", "Tailwind"],
-      link: {
-        label: "nathanroark.dev",
-        href: "https://nathanroark.dev",
-      },
+      group: "Personal Projects",
+      projects: [
+        {
+          title: "Media Blog",
+          description: "Static blog for media and notes.",
+          techStack: ["Astro", "TypeScript", "Tailwind", "Markdown"],
+          link: {
+            label: "nathanroark.com",
+            href: "https://nathanroark.com",
+          },
+        },
+        {
+          title: "Developer Portfolio",
+          description: "This website — my developer portfolio.",
+          techStack: ["Astro", "TypeScript", "Tailwind"],
+          link: {
+            label: "nathanroark.dev",
+            href: "https://nathanroark.dev",
+          },
+        },
+      ],
     },
   ],
 } as const;
