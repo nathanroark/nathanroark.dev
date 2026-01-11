@@ -204,22 +204,6 @@ export const Resume = {
           },
         },
         {
-          title: "Life",
-          description: "Conway's Game of Life.",
-          techStack: [
-            "Next.js",
-            "React",
-            "TypeScript",
-            "Tailwind",
-            "immer",
-            "Styled Components",
-          ],
-          link: {
-            label: "life.nathanroark.dev",
-            href: "https://github.com/nathanroark/life-next",
-          },
-        },
-        {
           title: "Data Viz Demos",
           description: "Custom D3 visualizations.",
           techStack: ["Next.js", "TypeScript", "React", "D3", "Tailwind"],
@@ -249,6 +233,22 @@ export const Resume = {
       group: "Modeling and Simulation Projects",
       projects: [
         {
+          title: "Life",
+          description: "Conway's Game of Life.",
+          techStack: [
+            "Next.js",
+            "React",
+            "TypeScript",
+            "Tailwind",
+            "immer",
+            "Styled Components",
+          ],
+          link: {
+            label: "life.nathanroark.dev",
+            href: "https://github.com/nathanroark/life-next",
+          },
+        },
+        {
           title: "Wolf Sheep Predation",
           description: "Agent-based modeling simulation.",
           techStack: ["Next.js", "React", "TypeScript"],
@@ -260,7 +260,7 @@ export const Resume = {
       ],
     },
     {
-      group: "Personal Projects",
+      group: "Basic Projects",
       projects: [
         {
           title: "Media Blog",
