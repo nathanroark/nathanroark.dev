@@ -1,0 +1,52 @@
+---
+import { Icon } from "astro-icon/components";
+import Badge from "./ui/Badge.astro";
+
+interface Props {
+  name: string;
+}
+
+const { name } = Astro.props;
+
+const ICONS: Record<string, string> = {
+  // Languages
+  TypeScript: "simple-icons:typescript",
+  "C++": "simple-icons:cplusplus",
+  Python: "simple-icons:python",
+  JavaScript: "simple-icons:javascript",
+  // Frameworks & libraries
+  React: "simple-icons:react",
+  Astro: "simple-icons:astro",
+  Svelte: "simple-icons:svelte",
+  "Next.js": "simple-icons:nextdotjs",
+  Tailwind: "simple-icons:tailwindcss",
+  Vite: "simple-icons:vite",
+  Qt: "simple-icons:qt",
+  // Tools
+  PostgreSQL: "simple-icons:postgresql",
+  Docker: "simple-icons:docker",
+  Kubernetes: "simple-icons:kubernetes",
+  Git: "simple-icons:git",
+  Unity: "simple-icons:unity",
+  FPGA: "lucide:cpu",
+  Verilog: "lucide:cpu",
+  Unix: "lucide:terminal",
+  // Protocols & APIs
+  REST: "lucide:webhook",
+  gRPC: "lucide:network",
+  Websockets: "lucide:cable",
+  XML: "lucide:code-xml",
+  JSON: "simple-icons:json",
+  Link16: "lucide:radio",
+  JREAP: "lucide:radio-tower",
+  VMF: "lucide:radio",
+  DIS: "lucide:antenna",
+};
+
+const iconId = ICONS[name];
+---
+
+<Badge class="gap-1">
+  {iconId && <Icon name={iconId} class="size-3" />}
+  {name}
+</Badge>

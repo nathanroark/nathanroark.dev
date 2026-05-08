@@ -3,12 +3,12 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/ui/Card.astro";
 import CardHeader from "../components/ui/CardHeader.astro";
 import CardContent from "../components/ui/CardContent.astro";
-import Badge from "../components/ui/Badge.astro";
 import Button from "../components/ui/Button.astro";
 import Avatar from "../components/ui/Avatar.astro";
 import Section from "../components/ui/Section.astro";
 import Icon from "../components/ui/Icon.astro";
 import ProjectCard from "../components/ProjectCard.astro";
+import SkillBadge from "../components/SkillBadge.astro";
 import Resume from "../config/resume";
 import LinkedIn from "@/components/icons/linked-in.astro";
 ---
@@ -142,35 +142,43 @@ import LinkedIn from "@/components/icons/linked-in.astro";
         <h2 class="text-xl font-bold">Skills</h2>
         <div class="space-y-3">
           <div>
-            <h3 class="text-sm font-semibold text-muted-foreground mb-1">
-              Languages
-            </h3>
+            <h3 class="font-semibold text-muted-foreground mb-1">Languages</h3>
             <div class="flex flex-wrap gap-1">
-              {Resume.skills.languages.map((skill) => <Badge>{skill}</Badge>)}
+              {
+                Resume.skills.languages.map((skill) => (
+                  <SkillBadge name={skill} />
+                ))
+              }
             </div>
           </div>
           <div>
-            <h3 class="text-sm font-semibold text-muted-foreground mb-1">
+            <h3 class="font-semibold text-muted-foreground mb-1">
               Frameworks & Libraries
             </h3>
             <div class="flex flex-wrap gap-1">
-              {Resume.skills.frameworks.map((skill) => <Badge>{skill}</Badge>)}
+              {
+                Resume.skills.frameworks.map((skill) => (
+                  <SkillBadge name={skill} />
+                ))
+              }
             </div>
           </div>
           <div>
-            <h3 class="text-sm font-semibold text-muted-foreground mb-1">
-              Tools
-            </h3>
+            <h3 class="font-semibold text-muted-foreground mb-1">Tools</h3>
             <div class="flex flex-wrap gap-1">
-              {Resume.skills.tools.map((skill) => <Badge>{skill}</Badge>)}
+              {Resume.skills.tools.map((skill) => <SkillBadge name={skill} />)}
             </div>
           </div>
           <div>
-            <h3 class="text-sm font-semibold text-muted-foreground mb-1">
+            <h3 class="font-semibold text-muted-foreground mb-1">
               Protocols & APIs
             </h3>
             <div class="flex flex-wrap gap-1">
-              {Resume.skills.protocols.map((skill) => <Badge>{skill}</Badge>)}
+              {
+                Resume.skills.protocols.map((skill) => (
+                  <SkillBadge name={skill} />
+                ))
+              }
             </div>
           </div>
         </div>
