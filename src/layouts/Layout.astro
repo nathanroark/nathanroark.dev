@@ -1,4 +1,6 @@
 ---
+import "@fontsource-variable/geist/index.css";
+import "@fontsource-variable/geist-mono/index.css";
 import "../styles/global.css";
 import { siteConfig } from "../config/site";
 
@@ -48,7 +50,7 @@ const { title = siteConfig.name, description = siteConfig.description } =
     <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body
-    class="bg-background text-foreground font-sans antialiased overscroll-y-auto"
+    class="bg-background text-foreground font-sans antialiased overscroll-y-auto bg-grid"
   >
     <slot />
   </body>
@@ -69,5 +71,48 @@ const { title = siteConfig.name, description = siteConfig.description } =
   .no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
+  }
+
+  /* Fine grid lines, faded out toward the viewport edges via a radial mask. */
+  .bg-grid {
+    position: relative;
+  }
+  .bg-grid::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(
+        to right,
+        color-mix(in oklch, var(--foreground) 8%, transparent) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        to bottom,
+        color-mix(in oklch, var(--foreground) 8%, transparent) 1px,
+        transparent 1px
+      );
+    background-size: 44px 44px;
+    -webkit-mask-image: radial-gradient(
+      ellipse 70% 60% at 50% 50%,
+      black 20%,
+      transparent 90%
+    );
+    mask-image: radial-gradient(
+      ellipse 70% 60% at 50% 50%,
+      black 20%,
+      transparent 90%
+    );
+  }
+  .bg-grid > * {
+    position: relative;
+    z-index: 1;
+  }
+  @media print {
+    .bg-grid::before {
+      display: none;
+    }
   }
 </style>
