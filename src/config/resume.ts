@@ -156,7 +156,7 @@ export const Resume = {
         {
           title: "Cosmos",
           description:
-            "A space knowledge explorer—browse planets, moons, galaxies, missions, and more, backed by NASA imagery.",
+            "A space knowledge explorer. Browse planets, moons, galaxies, missions, and more, backed by NASA imagery.",
           techStack: ["Tanstack Start", "TypeScript", "React", "Tailwind"],
           link: {
             label: "cosmos.foo",
