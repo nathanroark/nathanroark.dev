@@ -154,6 +154,16 @@ export const Resume = {
       group: "Full Stack Projects",
       projects: [
         {
+          title: "Cosmos",
+          description:
+            "A space knowledge explorer—browse planets, moons, galaxies, missions, and more, backed by NASA imagery.",
+          techStack: ["Tanstack Start", "TypeScript", "React", "Tailwind"],
+          link: {
+            label: "cosmos.foo",
+            href: "https://cosmos.foo",
+          },
+        },
+        {
           title: "Open Data",
           description:
             "Access and visualize federal spending, public health metrics, economic indicators, and more—all from publically available cited sources.",
