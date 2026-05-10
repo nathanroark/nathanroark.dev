@@ -51,63 +51,6 @@ export const Resume = {
       extra: "GPA 3.6",
     },
   ],
-  work: [
-    {
-      company: "Ignite",
-      link: "https://www.intrepidcontrol.com/ignite/",
-      badges: ["Full Stack Development", "Front End"],
-      title: "Full Stack Software Engineer",
-      start: "October 2025",
-      end: "Present",
-      bullets: [
-        "Updated and modernized the front end tooling for inherited legacy applications. Created a detailed system design document detailing the front end architecture to streamline future development efforts. (React, Java, SQL).",
-      ],
-    },
-    {
-      company: "UAH",
-      link: "https://www.uah.edu/",
-      badges: ["Game Design", "Research", "Geospatial"],
-      title: "Researcher",
-      start: "May 2025",
-      end: "December 2025",
-      bullets: [
-        "Engineered a high-fidelity immersive 3D visualization application using NASA Earthdata to create an accurate retelling of events of different natural disasters using real-time acquisition data (Unity, C#, Python, Bash).",
-      ],
-    },
-    {
-      company: "Trideum",
-      link: "https://www.trideum.com/",
-      badges: [
-        "Full Stack Software Development",
-        "Modeling and Simulation",
-        "AI/ML",
-      ],
-      title: "Software Engineer",
-      start: "March 2021",
-      end: "September 2025",
-      bullets: [
-        "Architected and led a team in the development of a comprehensive AI testing application supporting operational testing of advanced military systems (TypeScript, React, gRPC, REST, PostgreSQL).",
-        "Architected and developed a visualization application displaying complex flight data from an AI-controlled FPGA-based aircraft simulation system (TypeScript, React, Tailwind).",
-        "Designed and developed a visualization application to assist Systems Engineers to examine and understand complex system designs such as an Apache AH-64E through an interactive medium (TypeScript, Svelte, D3, Tailwind).",
-        "Architected and developed a protocol translation application enabling interoperability between JREAP, Link16, and VMF military communication standards (C++, React, TypeScript).",
-        "Built robust translation software converting military protocols (JREAP, Link16, VMF) into DIS formats for simulation interoperability, used in multiple distributed test events involving hundreds of people across the world (C++, Qt).",
-        "Implemented radar message translation capabilities into simulation systems, enhancing realism for large-scale networked training exercises involving 2,000+ participants (C++, Qt).",
-        "Architected and developed a streamlined note-taking tool designed for cybersecurity tabletop exercises, improving efficiency and collaboration (TypeScript, React, Tailwind).",
-        "Developed intuitive UI components for cybersecurity risk assessments and mission planning, enhancing usability and productivity (Unity, C#).",
-      ],
-    },
-    {
-      company: "a.i. Solutions",
-      link: "https://ai-solutions.com/",
-      badges: ["Internship"],
-      title: "Computer Engineer Intern",
-      start: "Summer 2016",
-      // end: "Summer 2016",
-      bullets: [
-        "Designed an internal inventory management tool for hardware tracking, achieving a 100% reduction in asset discrepancies during quarterly audits (C++, Qt, SQL).",
-      ],
-    },
-  ],
   skills: {
     languages: ["TypeScript", "C++", "Python", "JavaScript"],
     frameworks: [
