@@ -61,6 +61,7 @@ export const Resume = {
       "Tailwind",
       "Vite",
       "Qt",
+      "D3",
     ],
     tools: [
       "PostgreSQL",
