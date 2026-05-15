@@ -101,10 +101,26 @@ export const Resume = {
           title: "Cosmos",
           description:
             "A space knowledge explorer. Browse planets, moons, galaxies, missions, and more, backed by NASA imagery.",
-          techStack: ["Tanstack Start", "TypeScript", "React", "Tailwind"],
+          techStack: ["TypeScript", "React", "Tailwind", "Tanstack Start"],
           link: {
             label: "cosmos.foo",
             href: "https://cosmos.foo",
+          },
+        },
+        {
+          title: "Data Viz Demos",
+          description:
+            "A small collection of interactive demos, each self-contained and custom-built.",
+          techStack: [
+            "TypeScript",
+            "React",
+            "D3",
+            "Tailwind",
+            "Tanstack Start",
+          ],
+          link: {
+            label: "data-viz.nathanroark.dev",
+            href: "https://data-viz.nathanroark.dev",
           },
         },
         {
@@ -155,15 +171,6 @@ export const Resume = {
           link: {
             label: "coverflow.nathanroark.dev",
             href: "https://github.com/nathanroark/coverflow",
-          },
-        },
-        {
-          title: "Data Viz Demos",
-          description: "Custom D3 visualizations.",
-          techStack: ["Next.js", "TypeScript", "React", "D3", "Tailwind"],
-          link: {
-            label: "data-viz.nathanroark.dev",
-            href: "https://github.com/nathanroark/data-viz-next",
           },
         },
       ],
