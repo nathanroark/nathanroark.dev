@@ -76,7 +76,7 @@ import LinkedIn from "@/components/icons/linked-in.astro";
 
       <!-- About -->
       <Section>
-        <h2 class="text-xl font-bold">About</h2>
+        <h2 class="border-b border-border pb-1.5 text-xl font-bold">About</h2>
         <p class="text-pretty font-mono text-sm text-muted-foreground">
           {Resume.summary}
         </p>
@@ -84,7 +84,9 @@ import LinkedIn from "@/components/icons/linked-in.astro";
 
       <!-- Education -->
       <Section>
-        <h2 class="text-xl font-bold">Education</h2>
+        <h2 class="border-b border-border pb-1.5 text-xl font-bold">
+          Education
+        </h2>
         {
           Resume.education.map((education) => (
             <Card>
@@ -113,7 +115,9 @@ import LinkedIn from "@/components/icons/linked-in.astro";
 
       <!-- Certifications -->
       <Section>
-        <h2 class="text-xl font-bold">Certifications</h2>
+        <h2 class="border-b border-border pb-1.5 text-xl font-bold">
+          Certifications
+        </h2>
         <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
           {
             Resume.certifications.map((cert) => (
@@ -121,7 +125,7 @@ import LinkedIn from "@/components/icons/linked-in.astro";
                 href={cert.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="group flex items-center gap-3 rounded-lg border border-border bg-card p-3 transition-all hover:-translate-y-0.5 hover:border-foreground/30 hover:shadow-md print:border-0 print:p-2"
+                class="group flex items-center gap-3 border-2 border-border bg-card p-3 shadow-xs transition-all hover-border-sunset hover:-translate-y-0.5 hover:shadow-sm print:border-0 print:p-2"
               >
                 <div class="flex size-12 shrink-0 items-center justify-center rounded-md bg-muted/40 p-1.5">
                   <img
@@ -134,9 +138,6 @@ import LinkedIn from "@/components/icons/linked-in.astro";
                   <span class="truncate text-sm font-semibold leading-tight">
                     {cert.name}
                   </span>
-                  <span class="font-mono text-[10px] uppercase tracking-wider text-muted-foreground group-hover:text-foreground">
-                    Verify credential ↗
-                  </span>
                 </div>
               </a>
             ))
@@ -146,7 +147,7 @@ import LinkedIn from "@/components/icons/linked-in.astro";
 
       <!-- Skills -->
       <Section>
-        <h2 class="text-xl font-bold">Skills</h2>
+        <h2 class="border-b border-border pb-1.5 text-xl font-bold">Skills</h2>
         <div class="space-y-3">
           <div>
             <h3 class="font-semibold text-muted-foreground mb-1">Languages</h3>
@@ -192,8 +193,10 @@ import LinkedIn from "@/components/icons/linked-in.astro";
       </Section>
 
       <!-- Publications -->
-      <Section>
-        <h2 class="text-xl font-bold">Publications</h2>
+      <!-- <Section>
+        <h2 class="border-b border-border pb-1.5 text-xl font-bold">
+          Publications
+        </h2>
         {
           Resume.publications.map((pub) => (
             <Card>
@@ -213,11 +216,13 @@ import LinkedIn from "@/components/icons/linked-in.astro";
             </Card>
           ))
         }
-      </Section>
+      </Section> -->
 
       <!-- Projects -->
       <Section>
-        <h2 class="text-xl font-bold">Projects</h2>
+        <h2 class="border-b border-border pb-1.5 text-xl font-bold">
+          Projects
+        </h2>
         <div class="space-y-6">
           {
             Resume.project_groups.map((group) => (

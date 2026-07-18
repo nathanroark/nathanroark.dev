@@ -18,6 +18,8 @@ const { title = siteConfig.name, description = siteConfig.description } =
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- HTML meta cannot read CSS variables; keep in sync with .dark --background -->
+    <meta name="theme-color" content="#050709" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="generator" content={Astro.generator} />
@@ -50,69 +52,8 @@ const { title = siteConfig.name, description = siteConfig.description } =
     <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body
-    class="bg-background text-foreground font-sans antialiased overscroll-y-auto bg-grid"
+    class="bg-background text-foreground font-sans antialiased overscroll-y-auto"
   >
     <slot />
   </body>
 </html>
-
-<style is:global>
-  html,
-  body {
-    margin: 0;
-    width: 100%;
-    min-height: 100%;
-  }
-
-  /* Hide scrollbar but keep functionality */
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-
-  /* Fine grid lines, faded out toward the viewport edges via a radial mask. */
-  .bg-grid {
-    position: relative;
-  }
-  .bg-grid::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
-    background-image:
-      linear-gradient(
-        to right,
-        color-mix(in oklch, var(--foreground) 10%, transparent) 1px,
-        transparent 1px
-      ),
-      linear-gradient(
-        to bottom,
-        color-mix(in oklch, var(--foreground) 10%, transparent) 1px,
-        transparent 1px
-      );
-    background-size: 44px 44px;
-    -webkit-mask-image: radial-gradient(
-      ellipse 70% 60% at 50% 50%,
-      black 20%,
-      transparent 90%
-    );
-    mask-image: radial-gradient(
-      ellipse 70% 60% at 50% 50%,
-      black 20%,
-      transparent 90%
-    );
-  }
-  .bg-grid > * {
-    position: relative;
-    z-index: 1;
-  }
-  @media print {
-    .bg-grid::before {
-      display: none;
-    }
-  }
-</style>

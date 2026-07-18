@@ -55,6 +55,7 @@ export const Resume = {
     languages: ["TypeScript", "C++", "Python", "JavaScript"],
     frameworks: [
       "React",
+      // "TanstackStart",
       "Astro",
       "Svelte",
       "Next.js",
@@ -85,14 +86,14 @@ export const Resume = {
       "DIS",
     ],
   },
-  publications: [
-    {
-      authors:
-        "E. Michael Bearss, Nathan Roark, Juan G. Alonso Guzman, Vi Dang, Suraj Regmi, Mikel D. Petty",
-      title: "Using Machine Learning to Win Strike Force One",
-      venue: "Peer-reviewed paper presented at AlaSim 2022",
-    },
-  ],
+  // publications: [
+  //   {
+  //     authors:
+  //       "E. Michael Bearss, Nathan Roark, Juan G. Alonso Guzman, Vi Dang, Suraj Regmi, Mikel D. Petty",
+  //     title: "Using Machine Learning to Win Strike Force One",
+  //     venue: "Peer-reviewed paper presented at AlaSim 2022",
+  //   },
+  // ],
   project_groups: [
     {
       group: "Full Stack Projects",

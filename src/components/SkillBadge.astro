@@ -8,26 +8,29 @@ interface Props {
 
 const { name } = Astro.props;
 
+/* logos:* are full-color brand SVGs; brands whose logo is black (Next.js, Unity,
+   JSON) and the lucide glyphs stay monochrome so they render in currentColor. */
 const ICONS: Record<string, string> = {
   // Languages
-  TypeScript: "simple-icons:typescript",
-  "C++": "simple-icons:cplusplus",
-  Python: "simple-icons:python",
-  JavaScript: "simple-icons:javascript",
+  TypeScript: "logos:typescript-icon",
+  "C++": "logos:c-plusplus",
+  Python: "logos:python",
+  JavaScript: "logos:javascript",
   // Frameworks & libraries
-  React: "simple-icons:react",
-  Astro: "simple-icons:astro",
-  Svelte: "simple-icons:svelte",
+  React: "logos:react",
+  Astro: "logos:astro-icon",
+  Svelte: "logos:svelte-icon",
+  TanstackStart: "logos:tanstack",
   "Next.js": "simple-icons:nextdotjs",
-  Tailwind: "simple-icons:tailwindcss",
-  Vite: "simple-icons:vite",
-  Qt: "simple-icons:qt",
-  D3: "simple-icons:d3",
+  Tailwind: "logos:tailwindcss-icon",
+  Vite: "logos:vitejs",
+  Qt: "logos:qt",
+  D3: "logos:d3",
   // Tools
-  PostgreSQL: "simple-icons:postgresql",
-  Docker: "simple-icons:docker",
-  Kubernetes: "simple-icons:kubernetes",
-  Git: "simple-icons:git",
+  PostgreSQL: "logos:postgresql",
+  Docker: "logos:docker-icon",
+  Kubernetes: "logos:kubernetes",
+  Git: "logos:git-icon",
   Unity: "simple-icons:unity",
   FPGA: "lucide:cpu",
   Verilog: "lucide:cpu",
@@ -47,7 +50,7 @@ const ICONS: Record<string, string> = {
 const iconId = ICONS[name];
 ---
 
-<Badge class="gap-1">
+<Badge variant="secondary" class="gap-1">
   {iconId && <Icon name={iconId} class="size-3" />}
   {name}
 </Badge>
