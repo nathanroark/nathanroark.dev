@@ -124,22 +124,22 @@ export const Resume = {
             href: "https://data-viz.nathanroark.dev",
           },
         },
-        {
-          title: "Open Data",
-          description:
-            "Access and visualize federal spending, public health metrics, economic indicators, and more—all from publically available cited sources.",
-          techStack: [
-            "Tanstack Start",
-            "TypeScript",
-            "React",
-            "Tailwind",
-            "D3",
-          ],
-          link: {
-            label: "opendata.foo",
-            href: "https://opendata.foo",
-          },
-        },
+        // {
+        //   title: "Open Data",
+        //   description:
+        //     "Access and visualize federal spending, public health metrics, economic indicators, and more—all from publically available cited sources.",
+        //   techStack: [
+        //     "Tanstack Start",
+        //     "TypeScript",`
+        //     "React",
+        //     "Tailwind",
+        //     "D3",
+        //   ],
+        //   link: {
+        //     label: "opendata.foo",
+        //     href: "https://opendata.foo",
+        //   },
+        // },
         {
           title: "Audio Visualizer",
           description:

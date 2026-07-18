@@ -15,7 +15,7 @@ import LinkedIn from "@/components/icons/linked-in.astro";
 
 <Layout>
   <main class="px-2 relative mx-auto overflow-auto py-4 md:py-16 print:py-12">
-    <section class="mx-auto w-full max-w-3xl space-y-8 print:space-y-6">
+    <section class="mx-auto w-full max-w-4xl space-y-8 print:space-y-6">
       <!-- Header -->
       <div class="flex items-center justify-between">
         <div class="flex-1 space-y-1.5">
@@ -87,30 +87,34 @@ import LinkedIn from "@/components/icons/linked-in.astro";
         <h2 class="border-b border-border pb-1.5 text-xl font-bold">
           Education
         </h2>
-        {
-          Resume.education.map((education) => (
-            <Card>
-              <CardHeader>
-                <div class="flex items-center justify-between gap-x-2 text-base">
-                  <h3 class="font-semibold leading-none">{education.degree}</h3>
-                  <div class="text tabular-nums text-muted-foreground font-mono">
-                    {education.extra}
+        <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
+          {
+            Resume.education.map((education) => (
+              <Card>
+                <CardHeader>
+                  <div class="flex items-center justify-between gap-x-2 text-base">
+                    <h3 class="font-semibold leading-none">
+                      {education.degree}
+                    </h3>
+                    <div class="text tabular-nums text-muted-foreground font-mono">
+                      {education.extra}
+                    </div>
                   </div>
-                </div>
-              </CardHeader>
-              <CardContent class="mt-2">
-                <div class="flex items-center justify-between gap-x-2">
-                  <h3 class="leading-none text-sm text-muted-foreground">
-                    {education.school}
-                  </h3>
-                  <div class="text-sm tabular-nums text-muted-foreground">
-                    {education.year}
+                </CardHeader>
+                <CardContent class="mt-2">
+                  <div class="flex items-center justify-between gap-x-2">
+                    <h3 class="leading-none text-sm text-muted-foreground">
+                      {education.school}
+                    </h3>
+                    <div class="text-sm tabular-nums text-muted-foreground">
+                      {education.year}
+                    </div>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))
-        }
+                </CardContent>
+              </Card>
+            ))
+          }
+        </div>
       </Section>
 
       <!-- Certifications -->
