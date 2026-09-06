@@ -226,7 +226,7 @@ export const Resume = {
       projects: [
         {
           title: "Media Blog",
-          description: "Static blog for media and notes.",
+          description: "Static blog for media and sometimes thoughts about it",
           techStack: ["Astro", "TypeScript", "Tailwind", "Markdown"],
           link: {
             label: "nathanroark.com",
