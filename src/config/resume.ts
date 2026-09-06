@@ -5,7 +5,7 @@ export const Resume = {
   locationLink: "https://www.google.com/maps/place/Seattle,+WA",
   about: "Full Stack Software Engineer",
   summary:
-    "Software engineer creating and working on things I found intesting.",
+    "Software engineer creating things I want to exist and working on things I found intesting.",
   avatarUrl: "/it-me.jpeg",
   personalWebsiteUrl: "https://nathanroark.dev",
   contact: {
