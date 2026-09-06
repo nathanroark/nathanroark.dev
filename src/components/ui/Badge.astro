@@ -1,6 +1,6 @@
 ---
 interface Props {
-  variant?: "default" | "secondary" | "brutal" | "outline";
+  variant?: "default" | "secondary" | "outline";
   class?: string;
 }
 
@@ -8,17 +8,16 @@ const { variant = "default", class: className = "" } = Astro.props;
 
 const variants = {
   default: "bg-primary text-primary-foreground px-2.5 py-0.5",
-  secondary: "bg-secondary text-secondary-foreground px-2.5 py-1",
-  brutal: "bg-primary text-primary-foreground px-1 py-0",
+  secondary: "bg-secondary text-secondary-foreground px-1.5 py-0.5 rounded-xs",
   outline:
-    "border border-input bg-background hover:bg-accent hover:text-accent-foreground px-2.5 py-0.5",
+    "border border-border bg-transparent hover-border-sunset px-1.5 py-0.5",
 };
 ---
 
 <div
   class:list={[
     variants[variant],
-    "inline-flex items-center rounded-xs border border-transparent text-xs font-semibold transition-colors",
+    "inline-flex items-center border text-xs rounded-xs font-semibold transition-colors",
     className,
   ]}
 >
