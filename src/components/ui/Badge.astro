@@ -1,6 +1,6 @@
 ---
 interface Props {
-  variant?: "default" | "secondary" | "outline";
+  variant?: "default" | "secondary" | "outline" | "metal" | "underline";
   class?: string;
 }
 
@@ -8,9 +8,13 @@ const { variant = "default", class: className = "" } = Astro.props;
 
 const variants = {
   default: "bg-primary text-primary-foreground px-2.5 py-0.5",
-  secondary: "bg-secondary border border-border bg-transparent px-2 py-0.5",
+  secondary: "bg-card border border-border px-3 py-1.5",
   outline:
     "border border-border bg-transparent px-2 py-0.5",
+  metal:
+  "border border-border bg-card px-3 py-1.5 border-metal",
+  underline:
+    "border-b border-primary bg-card px-3 py-1.5"
 };
 ---
 

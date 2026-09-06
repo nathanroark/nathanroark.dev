@@ -11,9 +11,16 @@ import ProjectCard from "../components/ProjectCard.astro";
 import SkillBadge from "../components/SkillBadge.astro";
 import Resume from "../config/resume";
 import LinkedIn from "@/components/icons/linked-in.astro";
+import  SeattleSkyline  from "@/components/SeattleSkyline.astro";
 ---
 
 <Layout>
+
+	<div class="skyline-container fixed bottom-0 left-0 w-full height-auto">
+		<SeattleSkyline width="100%" height="100%" svgGProps="fill-black bg-black" />
+		<!-- negative margin because the bottom of the skyline has a gap that we are covering --->
+		<div class="bg-black h-160 md:h-120 lg:h-80 -mt-1 " />
+	</div>
   <main class="px-2 relative mx-auto overflow-auto py-4 md:py-16 print:py-12">
     <section class="mx-auto w-full max-w-4xl space-y-8 print:space-y-6">
       <!-- Header -->
@@ -129,7 +136,7 @@ import LinkedIn from "@/components/icons/linked-in.astro";
                 href={cert.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="rounded-xs group flex items-center gap-3 border border-border bg-card p-3 transition-all hover-border-sunset print:border-0 print:p-2"
+                class="rounded-md group flex items-center gap-3 border border-border bg-card p-3 transition-all border-metal hover-border-sunset print:border-0 print:p-2"
               >
                 <div class="flex size-12 shrink-0 items-center justify-center rounded-md bg-muted/40 p-1.5">
                   <img

@@ -5,10 +5,11 @@
 @theme inline {
   --font-sans:
     ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+    "Helvetica Neue", sans-serif;
   --font-mono:
     ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
+  --radius-xs: 0.25rem;
   --radius-md: calc(var(--radius) - 2px);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -46,18 +47,18 @@
 }
 
 .dark {
-  --background: oklch(0.125 0.01 240);
+  --background: oklch(0.25 0.008 250);
   --foreground: oklch(0.985 0.004 240);
-  --card: oklch(1 0.01 240 / 2%);
+  --card: oklch(0.08 0.004 255);
   --card-foreground: oklch(0.985 0.004 240);
   --primary: oklch(0.985 0.004 250);
   --primary-foreground: oklch(0.13 0.028 261.692);
-  --secondary: oklch(1 0.01 240 / 2%);
+  --secondary: oklch(1 0.01 240 / 6%);
   --muted: oklch(1 0 0 / 10%);
-  --muted-foreground: oklch(0.707 0.022 261.325);
+  --muted-foreground: oklch(0.78 0.012 255);
   --accent: oklch(1 0 0 / 10%);
   --accent-foreground: oklch(0.985 0.004 240);
-  --border: oklch(1 0.01 240 / 10%);
+  --border: oklch(1 0.01 240 / 16%);
   --brand: oklch(0.712 0.194 13.428);
   --sunset-1: oklch(0.828 0.189 84.429);
   --sunset-2: oklch(0.712 0.194 13.428);
@@ -83,28 +84,45 @@
 
 @layer components {
   /*
-   * Gradient hover border 
-   * 
-   * border-image would be one line but it disables border-radius, 
-   *  instead: a gradient rectangle over the element's 1px border
+   * Brushed silver border
+   *
+   * Same masked-gradient ring as .hover-border-sunset, but always on: a
+   * light/dark silver sweep for the sheen plus fine striations for the grain.
    *
    * Needs border + rounded-*
    */
-  .hover-border-sunset {
+  .border-metal {
     position: relative;
+    border-color: transparent;
+    background-clip: padding-box;
+    box-shadow:
+      0 1px 2px oklch(0 0 0 / 35%),
+      0 6px 16px -8px oklch(0 0 0 / 45%);
   }
-  .hover-border-sunset::after {
+  .border-metal::before {
     content: "";
     position: absolute;
-    inset: -1px;
+    inset: 0;
     padding: 1px;
     border-radius: inherit;
-    background: linear-gradient(
-      135deg,
-      var(--sunset-1),
-      var(--sunset-2),
-      var(--sunset-3)
-    );
+    background:
+      repeating-linear-gradient(
+        115deg,
+        oklch(1 0 0 / 16%) 0 1px,
+        transparent 1px 3px
+      ),
+      linear-gradient(
+        135deg,
+        oklch(0.52 0.005 250),
+        oklch(0.88 0.004 250) 12%,
+        oklch(0.62 0.005 250) 26%,
+        oklch(0.97 0.003 250) 38%,
+        oklch(0.55 0.005 250) 52%,
+        oklch(0.83 0.004 250) 66%,
+        oklch(0.5 0.005 250) 78%,
+        oklch(0.92 0.003 250) 90%,
+        oklch(0.58 0.005 250)
+      );
     -webkit-mask:
       linear-gradient(#000 0 0) content-box,
       linear-gradient(#000 0 0);
@@ -113,11 +131,6 @@
       linear-gradient(#000 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
-    opacity: 0;
-    transition: opacity 200ms ease;
     pointer-events: none;
-  }
-  .hover-border-sunset:hover::after {
-    opacity: 1;
   }
 }
