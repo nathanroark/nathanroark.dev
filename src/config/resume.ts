@@ -182,7 +182,7 @@ export const Resume = {
         {
           title: "Deep Learning Signal Classifier",
           description:
-            "Implemented, trained, and evaluated multiple variants of neural networks in PyTorch for automatic modulation classification.",
+            "Various neural networks for modulation classification constructed, trained, and compared against each other",
           techStack: ["PyTorch", "NumPy", "Python"],
           link: {
             label: "github.com",
