@@ -25,13 +25,6 @@
   --color-ring: var(--brand);
 }
 
-/*
- * tailwindcss.com-style theme. Values are stock Tailwind gray, except the dark
- * base surfaces, which are desaturated cool near-blacks (stock gray-950 reads
- * too blue at page scale). Surfaces and borders are translucent gray-950 (light)
- * / white (dark) so they layer on any bg. Accent: rose (--brand), plus the
- * amber -> rose -> violet ramp behind .hover-border-sunset.
- */
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -90,9 +83,12 @@
 
 @layer components {
   /*
-   * Gradient hover border. border-image would be one line but it disables
-   * border-radius, so instead: a gradient rectangle over the element's 1px
-   * border, mask-punched hollow in the middle. Needs border + rounded-* .
+   * Gradient hover border 
+   * 
+   * border-image would be one line but it disables border-radius, 
+   *  instead: a gradient rectangle over the element's 1px border
+   *
+   * Needs border + rounded-*
    */
   .hover-border-sunset {
     position: relative;
