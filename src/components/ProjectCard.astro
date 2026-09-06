@@ -19,8 +19,8 @@ const Tag = link ? "a" : "div";
   target={link ? "_blank" : undefined}
   rel={link ? "noopener noreferrer" : undefined}
   class:list={[
-    "group flex flex-col border-2 border-border bg-card p-3 shadow-xs transition-all",
-    link && "hover-border-sunset hover:-translate-y-0.5 hover:shadow-sm",
+    "group flex flex-col border border-border bg-card p-3 transition-all",
+    link && "hover-border-sunset",
   ]}
 >
   <div class="flex items-start justify-between gap-2">
