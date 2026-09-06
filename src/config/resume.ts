@@ -84,7 +84,15 @@ export const Resume = {
     },
     {
       group: "Frontend",
-      items: ["React", "Next.js", "Astro", "Svelte", "Tailwind", "Vite"],
+      items: [
+        "React",
+        "Next.js",
+        "Tanstack Start",
+        "Astro",
+        "Svelte",
+        "Tailwind",
+        "Vite",
+      ],
     },
     {
       group: "Visualization",
