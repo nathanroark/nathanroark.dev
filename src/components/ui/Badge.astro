@@ -8,16 +8,16 @@ const { variant = "default", class: className = "" } = Astro.props;
 
 const variants = {
   default: "bg-primary text-primary-foreground px-2.5 py-0.5",
-  secondary: "bg-secondary text-secondary-foreground px-1.5 py-0.5 rounded-xs",
+  secondary: "bg-secondary border border-border bg-transparent px-2 py-0.5",
   outline:
-    "border border-border bg-transparent hover-border-sunset px-1.5 py-0.5",
+    "border border-border bg-transparent px-2 py-0.5",
 };
 ---
 
 <div
   class:list={[
     variants[variant],
-    "inline-flex items-center border text-xs rounded-xs font-semibold transition-colors",
+    "inline-flex items-center border text-sm rounded-xs font-semibold transition-colors",
     className,
   ]}
 >
