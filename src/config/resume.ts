@@ -235,7 +235,7 @@ export const Resume = {
         },
         {
           title: "Developer Portfolio",
-          description: "This website — my developer portfolio.",
+          description: "This website ༼ つ ◕_◕ ༽つ",
           techStack: ["Astro", "TypeScript", "Tailwind"],
           link: {
             label: "nathanroark.dev",
