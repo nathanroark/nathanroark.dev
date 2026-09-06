@@ -5,7 +5,7 @@ export const Resume = {
   locationLink: "https://www.google.com/maps/place/Seattle,+WA",
   about: "Full Stack Software Engineer",
   summary:
-    "Software engineer with 5+ years of professional experience building mission-critical applications, simulations, and tools. I work primarily with TypeScript, React and C++",
+    "Software engineer creating and working on things I found intesting.",
   avatarUrl: "/it-me.jpeg",
   personalWebsiteUrl: "https://nathanroark.dev",
   contact: {
