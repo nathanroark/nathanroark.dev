@@ -51,41 +51,62 @@ export const Resume = {
       extra: "GPA 3.6",
     },
   ],
-  skills: {
-    languages: ["TypeScript", "C++", "Python", "JavaScript"],
-    frameworks: [
-      "React",
-      // "TanstackStart",
-      "Astro",
-      "Svelte",
-      "Next.js",
-      "Tailwind",
-      "Vite",
-      "Qt",
-      "D3",
-    ],
-    tools: [
-      "PostgreSQL",
-      "Docker",
-      "Kubernetes",
-      "Git",
-      "Unity",
-      "FPGA",
-      "Verilog",
-      "Unix",
-    ],
-    protocols: [
-      "REST",
-      "gRPC",
-      "Websockets",
-      "XML",
-      "JSON",
-      "Link16",
-      "JREAP",
-      "VMF",
-      "DIS",
-    ],
-  },
+  skills: [
+    {
+      group: "Languages",
+      items: ["TypeScript", "JavaScript", "Python", "C++"],
+    },
+    {
+      group: "Machine Learning",
+      items: [
+        "PyTorch",
+        "NumPy",
+        "Pandas",
+        "scikit-learn",
+        "SciPy",
+        "Jupyter",
+        "CNNs",
+        "RNNs",
+        "Transfer Learning",
+      ],
+    },
+    {
+      group: "Computer Vision",
+      items: [
+        "OpenCV",
+        "Object Detection",
+        "Image Segmentation",
+        "YOLO",
+        "ONNX",
+        "TensorRT",
+        "CUDA",
+      ],
+    },
+    {
+      group: "Frontend",
+      items: ["React", "Next.js", "Astro", "Svelte", "Tailwind", "Vite"],
+    },
+    {
+      group: "Visualization",
+      items: ["D3", "Matplotlib", "Canvas"],
+    },
+    {
+      group: "Backend & Data",
+      items: ["PostgreSQL", "REST", "gRPC", "Websockets", "JSON", "XML"],
+    },
+    {
+      group: "Infrastructure",
+      items: ["Docker", "Kubernetes", "Git", "Unix", "Azure"],
+    },
+    {
+      group: "Simulation & Interop",
+      items: ["Unity", "Qt", "DIS", "Link16", "JREAP", "VMF"],
+    },
+    {
+      group: "Signal & Hardware",
+      items: ["FPGA", "Verilog", "Signal Processing"],
+    },
+  ],
   // publications: [
   //   {
   //     authors:

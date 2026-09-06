@@ -1,6 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
 import Badge from "./ui/Badge.astro";
+import TECH_ICONS from "../config/tech-icons";
 
 interface Props {
   name: string;
@@ -8,49 +9,10 @@ interface Props {
 
 const { name } = Astro.props;
 
-/* logos:* are full-color brand SVGs; brands whose logo is black (Next.js, Unity,
-   JSON) and the lucide glyphs stay monochrome so they render in currentColor. */
-const ICONS: Record<string, string> = {
-  // Languages
-  TypeScript: "logos:typescript-icon",
-  "C++": "logos:c-plusplus",
-  Python: "logos:python",
-  JavaScript: "logos:javascript",
-  // Frameworks & libraries
-  React: "logos:react",
-  Astro: "logos:astro-icon",
-  Svelte: "logos:svelte-icon",
-  TanstackStart: "logos:tanstack",
-  "Next.js": "simple-icons:nextdotjs",
-  Tailwind: "logos:tailwindcss-icon",
-  Vite: "logos:vitejs",
-  Qt: "logos:qt",
-  D3: "logos:d3",
-  // Tools
-  PostgreSQL: "logos:postgresql",
-  Docker: "logos:docker-icon",
-  Kubernetes: "logos:kubernetes",
-  Git: "logos:git-icon",
-  Unity: "simple-icons:unity",
-  FPGA: "lucide:cpu",
-  Verilog: "lucide:cpu",
-  Unix: "lucide:terminal",
-  // Protocols & APIs
-  REST: "lucide:webhook",
-  gRPC: "lucide:network",
-  Websockets: "lucide:cable",
-  XML: "lucide:code-xml",
-  JSON: "simple-icons:json",
-  Link16: "lucide:radio",
-  JREAP: "lucide:radio-tower",
-  VMF: "lucide:radio",
-  DIS: "lucide:antenna",
-};
-
-const iconId = ICONS[name];
+const iconId = TECH_ICONS[name];
 ---
 
-<Badge variant="metal" class="gap-1.5 font-mono text-xs font-medium">
-  {iconId && <Icon name={iconId} class="size-3" />}
+<Badge variant="outline" class="gap-1.5 font-mono text-xs font-medium">
+  {iconId && <Icon name={iconId} class="h-3 w-auto" />}
   {name}
 </Badge>
