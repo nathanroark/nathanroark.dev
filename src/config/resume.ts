@@ -1,7 +1,7 @@
 export const Resume = {
   name: "Nathan Roark",
   initials: "NR",
-  location: "Seattle, WA",
+  location: "Seattle, Washington",
   locationLink: "https://www.google.com/maps/place/Seattle,+WA",
   about: "Full Stack Software Engineer",
   summary:
