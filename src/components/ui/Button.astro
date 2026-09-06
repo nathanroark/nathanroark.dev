@@ -1,6 +1,6 @@
 ---
 interface Props {
-  variant?: "default" | "outline" | "ghost";
+  variant?: "default" | "outline" | "ghost" | "metal";
   size?: "default" | "sm" | "icon";
   class?: string;
   href?: string;
@@ -17,6 +17,8 @@ const variants = {
   default: "bg-primary text-primary-foreground hover:bg-primary/90",
   outline:
     "border border-border bg-transparent hover-border-sunset",
+  metal:
+    "border border-border bg-card text-card-foreground border-metal border-metal-sm shadow-[0_1px_2px_oklch(0_0_0/35%)] hover-border-sunset",
   ghost: "hover:bg-accent hover:text-accent-foreground",
 };
 
