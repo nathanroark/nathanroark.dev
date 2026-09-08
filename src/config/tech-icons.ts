@@ -40,7 +40,7 @@ export const TechIcons: Record<string, string> = {
   Prisma: "simple-icons:prisma",
   Qt: "logos:qt",
   D3: "logos:d3",
-  Matplotlib: "logos:matplotlib-icon",
+  Matplotlib: "local:matplotlib",
   Canvas: "lucide:frame",
   // Tools
   PostgreSQL: "logos:postgresql",
