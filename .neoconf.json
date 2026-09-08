@@ -1,0 +1,7 @@
+{
+  "lspconfig": {
+    "cssls": {
+      "css.lint.unknownAtRules": "ignore"
+    }
+  }
+}

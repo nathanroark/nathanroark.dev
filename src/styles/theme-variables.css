@@ -1,6 +1,4 @@
 /* Maps the palette onto Tailwind's --color-* names */
-@custom-variant dark (&:is(.dark *));
-
 @theme inline {
   --font-sans:
     ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
