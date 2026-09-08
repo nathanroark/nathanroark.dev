@@ -62,58 +62,87 @@ export const Resume = {
         "PyTorch",
         "NumPy",
         "Pandas",
-        "scikit-learn",
-        "SciPy",
-        "Jupyter",
-        "CNNs",
-        "RNNs",
-        "Transfer Learning",
-      ],
-    },
-    {
-      group: "Computer Vision",
-      items: [
         "OpenCV",
-        "Object Detection",
-        "Image Segmentation",
-        "YOLO",
-        "ONNX",
-        "TensorRT",
         "CUDA",
+        "Matplotlib",
+        // "scikit-learn",
+        // "SciPy",
+        // "Jupyter",
+        // "CNNs",
+        // "RNNs",
+        // "Transfer Learning",
       ],
     },
+    // {
+    //   group: "Computer Vision",
+    //   items: [
+    // "OpenCV",
+    // "Object Detection",
+    // "Image Segmentation",
+    // "YOLO",
+    // "ONNX",
+    // "TensorRT",
+    // "CUDA",
+    //   ],
+    // },
     {
       group: "Frontend",
       items: [
         "React",
-        "Next.js",
-        "Tanstack Start",
-        "Astro",
-        "Svelte",
         "Tailwind",
+        "Astro",
+        "Tanstack Start",
         "Vite",
+        "D3",
+        "Next.js",
+        // "Svelte",
+      ],
+    },
+    // {
+    //   group: "Visualization",
+    //   items: [
+    // "D3",
+    // "Matplotlib",
+    // , "Canvas"
+    //   ],
+    // },
+    {
+      group: "Backend & Data",
+      items: [
+        "FastAPI",
+        "Hono",
+        "Qt",
+        "Unity",
+        "PostgreSQL",
+        "Prisma",
+        "REST",
+        "gRPC",
+        "Websockets",
+        // "DIS",
+        // "JSON",
+        // "XML",
       ],
     },
     {
-      group: "Visualization",
-      items: ["D3", "Matplotlib", "Canvas"],
-    },
-    {
-      group: "Backend & Data",
-      items: ["PostgreSQL", "REST", "gRPC", "Websockets", "JSON", "XML"],
-    },
-    {
       group: "Infrastructure",
-      items: ["Docker", "Kubernetes", "Git", "Unix", "Azure"],
+      items: [
+        "Docker",
+        "Kubernetes",
+        "Helm",
+        "Git",
+        "Unix",
+        "Cloudflare",
+        "Azure",
+      ],
     },
-    {
-      group: "Simulation & Interop",
-      items: ["Unity", "Qt", "DIS", "Link16", "JREAP", "VMF"],
-    },
-    {
-      group: "Signal & Hardware",
-      items: ["FPGA", "Verilog", "Signal Processing"],
-    },
+    // {
+    //   group: "Military Tech",
+    //   items: ["Link16", "JREAP", "VMF", "MIL STD 1553"],
+    // },
+    // {
+    //   group: "Signal & Hardware",
+    //   items: ["FPGA", "Verilog", "Signal Processing"],
+    // },
   ],
   // publications: [
   //   {
@@ -274,6 +303,4 @@ export const Resume = {
       ],
     },
   ],
-} as const;
-
-export default Resume;
+};

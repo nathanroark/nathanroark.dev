@@ -1,10 +1,4 @@
-/* logos:* are full-color brand SVGs; brands whose logo is black (Next.js, Unity,
-   JSON) and local:astro (the stock mark's glyph is near-black) and the lucide glyphs stay monochrome so they render in currentColor.
-
-   Prefer square-ish marks: these render at a fixed height with width auto, so
-   a wordmark like logos:nvidia (512x98) comes out a sliver next to a 1:1 mark.
-   simple-icons carries icon-only versions of most of them. */
-export const TECH_ICONS: Record<string, string> = {
+export const TechIcons: Record<string, string> = {
   // Languages
   TypeScript: "logos:typescript-icon",
   "C++": "logos:c-plusplus",
@@ -41,6 +35,9 @@ export const TECH_ICONS: Record<string, string> = {
   "Styled Components": "simple-icons:styledcomponents",
   immer: "logos:immer-icon",
   Markdown: "simple-icons:markdown",
+  FastAPI: "logos:fastapi-icon",
+  Hono: "logos:hono",
+  Prisma: "simple-icons:prisma",
   Qt: "logos:qt",
   D3: "logos:d3",
   Matplotlib: "logos:matplotlib-icon",
@@ -54,6 +51,8 @@ export const TECH_ICONS: Record<string, string> = {
   FPGA: "lucide:cpu",
   Verilog: "lucide:cpu",
   Unix: "lucide:terminal",
+  Helm: "simple-icons:helm",
+  Cloudflare: "logos:cloudflare-icon",
   Azure: "logos:microsoft-azure",
   // Protocols & APIs
   REST: "lucide:webhook",
@@ -65,7 +64,6 @@ export const TECH_ICONS: Record<string, string> = {
   JREAP: "lucide:radio-tower",
   VMF: "lucide:radio",
   DIS: "lucide:antenna",
+  "MIL STD 1553": "lucide:circuit-board",
   "Signal Processing": "lucide:audio-waveform",
 };
-
-export default TECH_ICONS;

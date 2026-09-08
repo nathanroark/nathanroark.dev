@@ -1,7 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
 import Badge from "./ui/Badge.astro";
-import TECH_ICONS from "../config/tech-icons";
+import { TechIcons } from "../config/tech-icons";
 
 interface Props {
   name: string;
@@ -9,7 +9,7 @@ interface Props {
 
 const { name } = Astro.props;
 
-const iconId = TECH_ICONS[name];
+const iconId = TechIcons[name];
 ---
 
 <Badge variant="outline" class="gap-1.5 font-mono text-xs font-medium">
