@@ -7,8 +7,9 @@ import icon from "astro-icon";
 export default defineConfig({
   integrations: [
     icon({
-      // Applies to src/icons only. viewBox is 256 wide and these render at
-      // 12-20px, so coordinate precision past integers is invisible weight.
+      // Applies to src/icons only. Source icons must use a ~256-unit viewBox
+      // and render at 12-20px, so coordinate precision past integers is
+      // invisible weight -- a small viewBox would be mangled by floatPrecision 0.
       // Attribute precision stays high: rounding fill-opacity or
       // stroke-dasharray changes how an icon looks.
       svgoOptions: {
