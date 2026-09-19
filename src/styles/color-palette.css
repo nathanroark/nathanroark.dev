@@ -48,5 +48,5 @@
   --sunset-3: oklch(0.606 0.25 292.717/40%);
   --midnight-1: oklch(0.16 0.022 258); /* was #1e1b4b */
   --midnight-2: oklch(0.23 0.026 266); /* was #312e81 */
-  --midnight-3: oklch(0.27 0.022 272); /* was #4c1d95 */
+  --midnight-3: oklch(0.27 0.024 272); /* was #4c1d95 */
 }
