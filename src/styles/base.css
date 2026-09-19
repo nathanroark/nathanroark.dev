@@ -10,8 +10,16 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-image: linear-gradient(
+      180deg,
+      var(--midnight-1),
+      var(--midnight-2) 50%,
+      var(--midnight-3)
+    );
+    background-attachment: fixed;
   }
   ::selection {
+    /* This is for mouse highlights */
     background-color: color-mix(in oklch, var(--brand) 25%, transparent);
   }
 }
