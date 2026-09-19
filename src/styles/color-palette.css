@@ -23,7 +23,7 @@
 
 .dark {
   color-scheme: dark;
-  --background: oklch(0.2 0.008 240);
+  --background: oklch(0.16 0.022 258);
   /* --background: linear-gradient(180deg, #1e1b4b 0%, #312e81 50%, #4c1d95 100%); */
   /* --background: linear-gradient( */
   /*   180deg, */
