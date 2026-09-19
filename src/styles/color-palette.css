@@ -23,18 +23,18 @@
 
 .dark {
   color-scheme: dark;
-  --background: oklch(0.13 0.008 200);
-  --foreground: oklch(0.985 0.004 200);
-  --card: oklch(0.08 0.004 200);
-  --card-foreground: oklch(0.985 0.004 200);
-  --primary: oklch(0.985 0.004 200);
+  --background: oklch(0.2 0.008 240);
+  --foreground: oklch(0.985 0.004 240);
+  --card: oklch(0.2 0.004 240);
+  --card-foreground: oklch(0.985 0.004 240);
+  --primary: oklch(0.985 0.004 240);
   --primary-foreground: oklch(0.13 0.028 261.692);
   --secondary: oklch(1 0.01 240 / 6%);
   --muted: oklch(1 0 0 / 10%);
-  --muted-foreground: oklch(0.78 0.012 200);
+  --muted-foreground: oklch(0.78 0.012 240);
   --accent: oklch(1 0 0 / 10%);
-  --accent-foreground: oklch(0.985 0.004 200);
-  --border: oklch(1 0.01 240 / 16%);
+  --accent-foreground: oklch(0.985 0.004 240);
+  --border: oklch(1 0.01 240 / 22%);
   --brand: oklch(0.712 0.194 200.428);
   --sunset-1: oklch(0.828 0.189 84.429);
   --sunset-2: oklch(0.712 0.194 13.428);

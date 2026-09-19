@@ -1,27 +1,14 @@
 ---
 interface Props {
-  variant?: "default" | "secondary" | "outline" | "metal" | "underline";
   class?: string;
 }
 
-const { variant = "default", class: className = "" } = Astro.props;
-
-const variants = {
-  default: "bg-primary text-primary-foreground px-2.5 py-0.5",
-  secondary: "bg-card border border-border px-3 py-1.5",
-  outline:
-    "border border-border bg-transparent px-2 py-0.5",
-  metal:
-    "border border-border bg-card text-card-foreground px-2.5 py-1 border-metal border-metal-sm shadow-[0_1px_2px_oklch(0_0_0/35%)]",
-  underline:
-    "border-b border-primary bg-card px-2.5 py-1.5"
-};
+const { class: className = "" } = Astro.props;
 ---
 
 <div
   class:list={[
-    variants[variant],
-    "inline-flex items-center border text-sm rounded-xs font-semibold transition-colors",
+    "inline-flex items-center rounded-xs border border-border px-2 py-0.5 text-sm font-semibold",
     className,
   ]}
 >

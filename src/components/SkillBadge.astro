@@ -12,7 +12,7 @@ const { name } = Astro.props;
 const iconId = TechIcons[name];
 ---
 
-<Badge variant="outline" class="gap-1.5 font-mono text-xs font-medium">
+<Badge class="gap-1.5 font-mono text-xs font-medium">
   {iconId && <Icon name={iconId} class="h-3 w-auto" />}
   {name}
 </Badge>
