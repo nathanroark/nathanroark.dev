@@ -25,7 +25,7 @@
   color-scheme: dark;
   --background: oklch(0.16 0.022 258);
   --foreground: oklch(0.985 0.004 240);
-  --card: oklch(0.18 0.022 240);
+  --card: oklch(0.2 0.022 266);
   --card-foreground: oklch(0.985 0.004 240);
   --primary: oklch(0.985 0.004 240);
   --primary-foreground: oklch(0.13 0.028 261.692);
