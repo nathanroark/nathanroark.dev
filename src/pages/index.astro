@@ -6,11 +6,10 @@ import CardContent from "../components/ui/CardContent.astro";
 import Button from "../components/ui/Button.astro";
 import Avatar from "../components/ui/Avatar.astro";
 import Section from "../components/ui/Section.astro";
-import Icon from "../components/ui/Icon.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import SkillBadge from "../components/SkillBadge.astro";
-import LinkedIn from "@/components/icons/linked-in.astro";
 import { Resume } from "../config/resume";
+import { Icon as AstroIcon } from "astro-icon/components";
 ---
 
 <Layout>
@@ -31,12 +30,12 @@ import { Resume } from "../config/resume";
             class="max-w-md items-center text-pretty font-mono text-sm text-muted-foreground"
           >
             <a
-              class="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
+              class="inline-flex items-center gap-x-1.5 align-baseline leading-none hover:underline"
               href={Resume.locationLink}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon name="globe" class="size-3" />
+              <AstroIcon name="lucide:globe" class="h-5 w-auto" />
               {Resume.location}
             </a>
           </p>
@@ -50,13 +49,10 @@ import { Resume } from "../config/resume";
                   class="size-8"
                 >
                   {social.name === "GitHub" ? (
-                    <Icon name="github" class="size-4" />
+                    <!-- <Icon name="github" class="size-4" /> -->
+                    <AstroIcon name="simple-icons:github" class="h-5 w-auto" />
                   ) : social.name === "LinkedIn" ? (
-                    <LinkedIn
-                      width={24}
-                      height={24}
-                      class="size-4 fill-primary"
-                    />
+                    <AstroIcon name="simple-icons:linkedin" class="h-5 w-auto" />
                   ) : null}
                 </Button>
               ))
