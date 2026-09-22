@@ -14,12 +14,7 @@ export const Resume = {
         name: "GitHub",
         url: "https://github.com/NathanRoark",
         icon: "github",
-      },
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/nathan-roark/",
-        icon: "linkedin",
-      },
+      }
     ],
   },
   certifications: [
