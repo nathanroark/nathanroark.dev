@@ -14,7 +14,7 @@ export const Resume = {
         name: "GitHub",
         url: "https://github.com/NathanRoark",
         icon: "github",
-      }
+      },
     ],
   },
   certifications: [
@@ -154,8 +154,8 @@ export const Resume = {
         {
           title: "Cosmos",
           description:
-            "A space knowledge explorer. Browse planets, moons, galaxies, missions, and more, backed by NASA imagery.",
-          techStack: ["TypeScript", "React", "Tailwind", "Tanstack Start"],
+            "A space knowledge explorer. Browse planets, moons, galaxies, and space missions. All with beautiful images from NASA.",
+          techStack: ["Tanstack Start", "React", "TypeScript", "Tailwind"],
           link: {
             label: "cosmos.foo",
             href: "https://cosmos.foo",
@@ -166,11 +166,11 @@ export const Resume = {
           description:
             "A small collection of interactive demos, each self-contained and custom-built.",
           techStack: [
-            "TypeScript",
+            "Tanstack Start",
             "React",
             "D3",
+            "TypeScript",
             "Tailwind",
-            "Tanstack Start",
           ],
           link: {
             label: "data-viz.nathanroark.dev",
@@ -197,7 +197,7 @@ export const Resume = {
           title: "Audio Visualizer",
           description:
             "Visualize audio input into the browser with various graphs.",
-          techStack: ["TypeScript", "React", "Tailwind"],
+          techStack: ["React", "TypeScript", "Tailwind"],
           link: {
             label: "audio-visualizer.nathanroark.dev",
             href: "https://voice.nathanroark.dev",
@@ -206,7 +206,7 @@ export const Resume = {
         {
           title: "Pong Wars",
           description: "Pong Wars rendered on Canvas.",
-          techStack: ["Svelte", "SvelteKit", "TypeScript", "Tailwind"],
+          techStack: ["Svelte", "TypeScript", "Tailwind"],
           link: {
             label: "pong-wars.nathanroark.dev",
             href: "https://github.com/nathanroark/pong-wars",
