@@ -25,18 +25,17 @@
   color-scheme: dark;
   --background: oklch(0.16 0.022 258);
   --foreground: oklch(0.985 0.004 240);
-  --card: oklch(0.2 0.022 266);
+  --card: oklch(0.18 0.022 260);
   --card-foreground: oklch(0.985 0.004 240);
   --primary: oklch(0.985 0.004 240);
   --primary-foreground: oklch(0.13 0.028 261.692);
   --secondary: oklch(1 0.01 240 / 6%);
   --muted: oklch(1 0 0 / 10%);
   --muted-foreground: oklch(0.78 0.012 240);
-  --accent: oklch(1 0 0 / 10%);
+  --accent: oklch(0.7 0.2 290);
   --accent-foreground: oklch(0.985 0.004 240);
-  --border: oklch(1 0.018 240 / 22%);
-  --brand: oklch(0.712 0.194 200.428);
-  --bg-1: oklch(0.18 0.022 258);
-  --bg-2: oklch(0.22 0.026 266);
-  --bg-3: oklch(0.26 0.024 272);
+  --border: oklch(1 0.018 240 / 24%);
+  --bg-1: oklch(0.17 0.022 258);
+  --bg-2: oklch(0.2 0.026 266);
+  --bg-3: oklch(0.24 0.024 272);
 }

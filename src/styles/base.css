@@ -20,6 +20,6 @@
   }
   ::selection {
     /* This is for mouse highlights */
-    background-color: color-mix(in oklch, var(--brand) 25%, transparent);
+    background-color: color-mix(in oklch, var(--accent), transparent);
   }
 }
