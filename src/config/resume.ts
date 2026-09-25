@@ -55,10 +55,10 @@ export const Resume = {
       group: "Machine Learning",
       items: [
         "PyTorch",
-        "NumPy",
-        "Pandas",
         "OpenCV",
+        "Pandas",
         "CUDA",
+        "NumPy",
         "Matplotlib",
         // "scikit-learn",
         // "SciPy",
@@ -66,17 +66,16 @@ export const Resume = {
         // "CNNs",
         // "RNNs",
         // "Transfer Learning",
+        // "TensorRT",
       ],
     },
     // {
     //   group: "Computer Vision",
     //   items: [
-    // "OpenCV",
     // "Object Detection",
     // "Image Segmentation",
     // "YOLO",
     // "ONNX",
-    // "TensorRT",
     // "CUDA",
     //   ],
     // },
@@ -84,13 +83,13 @@ export const Resume = {
       group: "Frontend",
       items: [
         "React",
-        "Tailwind",
         "Astro",
         "Tanstack Start",
+        "Tailwind",
         "Vite",
         "D3",
-        "Next.js",
         // "Svelte",
+        // "Next.js",
       ],
     },
     // {
@@ -130,23 +129,7 @@ export const Resume = {
         "Azure",
       ],
     },
-    // {
-    //   group: "Military Tech",
-    //   items: ["Link16", "JREAP", "VMF", "MIL STD 1553"],
-    // },
-    // {
-    //   group: "Signal & Hardware",
-    //   items: ["FPGA", "Verilog", "Signal Processing"],
-    // },
   ],
-  // publications: [
-  //   {
-  //     authors:
-  //       "E. Michael Bearss, Nathan Roark, Juan G. Alonso Guzman, Vi Dang, Suraj Regmi, Mikel D. Petty",
-  //     title: "Using Machine Learning to Win Strike Force One",
-  //     venue: "Peer-reviewed paper presented at AlaSim 2022",
-  //   },
-  // ],
   project_groups: [
     {
       group: "Full Stack Projects",
