@@ -112,9 +112,6 @@ export const Resume = {
         "REST",
         "gRPC",
         "Websockets",
-        // "DIS",
-        // "JSON",
-        // "XML",
       ],
     },
     {
