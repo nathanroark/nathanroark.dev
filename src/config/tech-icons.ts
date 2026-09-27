@@ -4,6 +4,7 @@ export const TechIcons: Record<string, string> = {
   "C++": "logos:c-plusplus",
   Python: "logos:python",
   JavaScript: "logos:javascript",
+
   // Machine learning
   PyTorch: "logos:pytorch-icon",
   NumPy: "logos:numpy",
@@ -14,6 +15,7 @@ export const TechIcons: Record<string, string> = {
   CNNs: "lucide:brain-circuit",
   RNNs: "lucide:repeat",
   "Transfer Learning": "lucide:brain",
+
   // Computer vision
   OpenCV: "simple-icons:opencv",
   "Object Detection": "lucide:scan-box",
@@ -22,6 +24,7 @@ export const TechIcons: Record<string, string> = {
   ONNX: "simple-icons:onnx",
   TensorRT: "local:nvidia",
   CUDA: "local:nvidia",
+
   // Frameworks & libraries
   React: "logos:react",
   Astro: "local:astro",
@@ -42,6 +45,7 @@ export const TechIcons: Record<string, string> = {
   D3: "logos:d3",
   Matplotlib: "local:matplotlib",
   Canvas: "lucide:frame",
+
   // Tools
   PostgreSQL: "logos:postgresql",
   Docker: "logos:docker-icon",
@@ -54,6 +58,7 @@ export const TechIcons: Record<string, string> = {
   Helm: "simple-icons:helm",
   Cloudflare: "logos:cloudflare-icon",
   Azure: "logos:microsoft-azure",
+
   // Protocols & APIs
   REST: "lucide:webhook",
   gRPC: "lucide:network",

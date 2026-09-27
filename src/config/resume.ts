@@ -3,7 +3,7 @@ export const Resume = {
   initials: "NR",
   location: "Seattle, Washington",
   locationLink: "https://www.google.com/maps/place/Seattle,+WA",
-  about: "Full Stack Software Engineer",
+  about: "Software Engineer",
   summary:
     "Software engineer living in Seattle. Creating things I want to exist. Working on things I find intesting.",
   avatarUrl: "/it-me.jpeg",
@@ -14,6 +14,11 @@ export const Resume = {
         name: "GitHub",
         url: "https://github.com/NathanRoark",
         icon: "github",
+      },
+      {
+        name: "atproto",
+        url: "https://bsky.app/profile/nathanroark.bsky.social",
+        icon: "bluesky",
       },
     ],
   },

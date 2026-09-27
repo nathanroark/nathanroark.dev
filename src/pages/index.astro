@@ -40,7 +40,7 @@ import { Icon as AstroIcon } from "astro-icon/components";
             </a>
           </p>
           <div
-            class="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground"
+            class="flex gap-1.5 pt-1 font-mono text-sm text-muted-foreground"
           >
             {
               Resume.contact.social.map((social) => (
@@ -49,8 +49,9 @@ import { Icon as AstroIcon } from "astro-icon/components";
                   class="size-8"
                 >
                   {social.name === "GitHub" ? (
-                    <!-- <Icon name="github" class="size-4" /> -->
                     <AstroIcon name="simple-icons:github" class="h-5 w-auto" />
+                  ) : social.name === "atproto" ? (
+                    <AstroIcon name="simple-icons:bluesky" class="h-5 w-auto" />
                   ) : null}
                 </Button>
               ))
