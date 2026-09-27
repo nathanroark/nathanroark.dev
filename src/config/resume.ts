@@ -1,3 +1,11 @@
+const Tools = {
+  textEditor: { name: "neovim", link: "" },
+  terminalMultiplexer: { name: "tmux", link: "" },
+  theme: { name: "sora", link: "" },
+  noteTaker: { name: "Notion", link: "" },
+  whiteboard: { name: "Excalidraw", link: "" },
+};
+
 export const Resume = {
   name: "Nathan Roark",
   initials: "NR",
@@ -270,4 +278,5 @@ export const Resume = {
       ],
     },
   ],
+  tools: Tools,
 };
