@@ -6,7 +6,7 @@ const Tools = {
   whiteboard: { name: "Excalidraw", link: "" },
 };
 
-export const Resume = {
+export const Content = {
   name: "Nathan Roark",
   initials: "NR",
   location: "Seattle, Washington",
