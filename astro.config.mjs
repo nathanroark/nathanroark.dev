@@ -7,6 +7,7 @@ import icon from "astro-icon";
 export default defineConfig({
   integrations: [
     icon({
+      iconDir: "src/custom-icons",
       // Applies to src/icons only. Source icons must use a ~256-unit viewBox
       // and render at 12-20px, so coordinate precision past integers is
       // invisible weight -- a small viewBox would be mangled by floatPrecision 0.

@@ -8,7 +8,7 @@ export const TechIcons: Record<string, string> = {
   // Machine learning
   PyTorch: "logos:pytorch-icon",
   NumPy: "logos:numpy",
-  Pandas: "local:pandas",
+  Pandas: "pandas",
   "scikit-learn": "simple-icons:scikitlearn",
   SciPy: "simple-icons:scipy",
   Jupyter: "logos:jupyter",
@@ -22,14 +22,14 @@ export const TechIcons: Record<string, string> = {
   "Image Segmentation": "lucide:layers",
   YOLO: "simple-icons:ultralytics",
   ONNX: "simple-icons:onnx",
-  TensorRT: "local:nvidia",
-  CUDA: "local:nvidia",
+  TensorRT: "nvidia",
+  CUDA: "nvidia",
 
   // Frameworks & libraries
   React: "logos:react",
-  Astro: "local:astro",
+  Astro: "astro",
   Svelte: "logos:svelte-icon",
-  "Tanstack Start": "local:tanstack",
+  "Tanstack Start": "tanstack",
   "Next.js": "simple-icons:nextdotjs",
   Tailwind: "logos:tailwindcss-icon",
   Vite: "logos:vitejs",
@@ -43,7 +43,7 @@ export const TechIcons: Record<string, string> = {
   Prisma: "simple-icons:prisma",
   Qt: "logos:qt",
   D3: "logos:d3",
-  Matplotlib: "local:matplotlib",
+  Matplotlib: "matplotlib",
   Canvas: "lucide:frame",
 
   // Tools
