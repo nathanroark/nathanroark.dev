@@ -6,6 +6,8 @@ const Tools = {
   whiteboard: { name: "Excalidraw", link: "" },
 };
 
+// TODO: Break Content into sections
+
 export const Content = {
   name: "Nathan Roark",
   initials: "NR",
