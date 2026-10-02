@@ -1,14 +1,4 @@
-const Tools = {
-  textEditor: { name: "neovim", link: "" },
-  terminalMultiplexer: { name: "tmux", link: "" },
-  theme: { name: "sora", link: "" },
-  noteTaker: { name: "Notion", link: "" },
-  whiteboard: { name: "Excalidraw", link: "" },
-};
-
-// TODO: Break Content into sections
-
-export const Content = {
+const General = {
   name: "Nathan Roark",
   initials: "NR",
   location: "Seattle, Washington",
@@ -32,6 +22,20 @@ export const Content = {
       },
     ],
   },
+};
+
+const Tools = {
+  textEditor: { name: "neovim", link: "" },
+  terminalMultiplexer: { name: "tmux", link: "" },
+  theme: { name: "sora", link: "" },
+  noteTaker: { name: "Notion", link: "" },
+  whiteboard: { name: "Excalidraw", link: "" },
+};
+
+// TODO: Break Content into sections
+
+export const Content = {
+  general: General,
   certifications: [
     {
       name: "CompTIA Security+",

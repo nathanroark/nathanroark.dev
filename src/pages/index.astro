@@ -19,31 +19,31 @@ import { Icon as AstroIcon } from "astro-icon/components";
       <div class="flex items-center justify-between">
         <div class="flex-1 space-y-1.5">
           <h1 class="text-pretty text-4xl font-bold">
-            {Content.name}
+            {Content.general.name}
           </h1>
           <p
             class="max-w-md text-pretty font-mono text-sm text-muted-foreground"
           >
-            {Content.about}
+            {Content.general.about}
           </p>
           <p
             class="max-w-md items-center text-pretty font-mono text-sm text-muted-foreground"
           >
             <a
               class="inline-flex items-center gap-x-1.5 align-baseline leading-none hover:underline"
-              href={Content.locationLink}
+              href={Content.general.locationLink}
               target="_blank"
               rel="noopener noreferrer"
             >
               <AstroIcon name="lucide:globe" class="h-5 w-auto" />
-              {Content.location}
+              {Content.general.location}
             </a>
           </p>
           <div
             class="flex gap-1.5 pt-1 font-mono text-sm text-muted-foreground"
           >
             {
-              Content.contact.social.map((social) => (
+              Content.general.contact.social.map((social) => (
                 <Button
                   href={social.url}
                   class="size-8"
@@ -60,9 +60,9 @@ import { Icon as AstroIcon } from "astro-icon/components";
         </div>
 
         <Avatar
-          src={Content.avatarUrl}
-          alt={Content.name}
-          fallback={Content.initials}
+          src={Content.general.avatarUrl}
+          alt={Content.general.name}
+          fallback={Content.general.initials}
           class="ml-1 size-30"
         />
       </div>
@@ -71,7 +71,7 @@ import { Icon as AstroIcon } from "astro-icon/components";
       <Section>
         <h2 class="border-b border-border pb-1.5 text-xl font-bold">About</h2>
         <p class="text-pretty font-mono text-sm text-muted-foreground">
-          {Content.summary}
+          {Content.general.summary}
         </p>
       </Section>
 
