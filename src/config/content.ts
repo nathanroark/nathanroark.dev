@@ -24,12 +24,42 @@ const General = {
   },
 };
 
-const Tools = {
-  textEditor: { name: "neovim", link: "https://neovim.io/" },
-  terminalMultiplexer: { name: "tmux", link: "https://tmux.app/" },
-  theme: { name: "sora", link: "https://soratheme.com/" },
-  noteTaker: { name: "Notion", link: "https://www.notion.com/" },
-  whiteboard: { name: "Excalidraw", link: "https://excalidraw.com/" },
+type Tool = {
+  label: string;
+  name: string;
+  link?: string;
+};
+
+const Tools: Record<string, Tool> = {
+  textEditor: {
+    label: "Editor",
+    name: "Neovim",
+    link: "https://neovim.io/",
+  },
+  terminalMultiplexer: {
+    label: "Multiplexer",
+    name: "Tmux",
+    link: "https://tmux.app/",
+  },
+  theme: {
+    label: "Theme",
+    name: "Sora",
+    link: "https://soratheme.com/",
+  },
+  noteTaker: {
+    label: "Notes",
+    name: "Notion",
+    link: "https://www.notion.com/",
+  },
+  whiteboard: {
+    label: "Whiteboard",
+    name: "Excalidraw",
+    link: "https://excalidraw.com/",
+  },
+  laptop: {
+    label: "Laptop",
+    name: "MacBook Pro M2 Max",
+  },
 };
 
 const Education = {

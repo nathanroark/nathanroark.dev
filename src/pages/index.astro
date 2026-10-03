@@ -75,6 +75,87 @@ import { Icon as AstroIcon } from "astro-icon/components";
         </p>
       </Section>
 
+      <!-- Projects -->
+      <Section>
+        <h2 class="border-b border-border pb-1.5 text-xl font-bold">
+          Projects
+        </h2>
+        <div class="space-y-6">
+          {
+            Object.values(Content.projects).map((group) => (
+              <div class="space-y-3">
+                <h3 class="text-sm font-semibold text-muted-foreground">
+                  {group.group}
+                </h3>
+                <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
+                  {Object.values(group.projects).map((project) => (
+                    <ProjectCard
+                      title={project.title}
+                      description={project.description}
+                      tags={project.techStack}
+                      link={project.link?.href}
+                    />
+                  ))}
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </Section>
+
+      <!-- Skills -->
+      <Section>
+        <h2 class="border-b border-border pb-1.5 text-xl font-bold">Skills</h2>
+        <div class="grid grid-cols-1 gap-3">
+          {
+            Object.values(Content.skills).map((group) => (
+              <Card>
+                <CardHeader>
+                  <h3 class="font-semibold leading-none">{group.group}</h3>
+                </CardHeader>
+                <CardContent class="mt-2">
+                  <div class="flex flex-wrap gap-1">
+                    {group.items.map((skill) => (
+                      <SkillBadge name={skill} />
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            ))
+          }
+        </div>
+      </Section>
+
+
+
+      <!-- Tools -->
+      <Section>
+        <h2 class="border-b border-border pb-1.5 text-xl font-bold">Tools</h2>
+        <div class="grid grid-cols-2 gap-3 md:grid-cols-3">
+         {
+  Object.values(Content.tools).map((tool) => {
+    const Tag = tool.link ? "a" : "div";
+    return (
+      <Tag
+        href={tool.link}
+        target={tool.link && "_blank"}
+        rel={tool.link && "noopener noreferrer"}
+        class="rounded-md flex flex-col gap-1 border border-border bg-card p-3 transition-all hover-border-sunset"
+      >
+        <span class="font-mono text-xs text-muted-foreground">
+          {tool.label}
+        </span>
+        <span class="truncate text-sm font-semibold leading-tight">
+          {tool.name}
+        </span>
+      </Tag>
+    );
+  })
+}
+
+        </div>
+      </Section>
+
       <!-- Education -->
       <Section>
         <h2 class="border-b border-border pb-1.5 text-xl font-bold">
@@ -142,29 +223,6 @@ import { Icon as AstroIcon } from "astro-icon/components";
         </div>
       </Section>
 
-      <!-- Skills -->
-      <Section>
-        <h2 class="border-b border-border pb-1.5 text-xl font-bold">Skills</h2>
-        <div class="grid grid-cols-1 gap-3">
-          {
-            Object.values(Content.skills).map((group) => (
-              <Card>
-                <CardHeader>
-                  <h3 class="font-semibold leading-none">{group.group}</h3>
-                </CardHeader>
-                <CardContent class="mt-2">
-                  <div class="flex flex-wrap gap-1">
-                    {group.items.map((skill) => (
-                      <SkillBadge name={skill} />
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            ))
-          }
-        </div>
-      </Section>
-
       <!-- Publications -->
       <!-- <Section>
         <h2 class="border-b border-border pb-1.5 text-xl font-bold">
@@ -190,34 +248,6 @@ import { Icon as AstroIcon } from "astro-icon/components";
           ))
         }
       </Section> -->
-
-      <!-- Projects -->
-      <Section>
-        <h2 class="border-b border-border pb-1.5 text-xl font-bold">
-          Projects
-        </h2>
-        <div class="space-y-6">
-          {
-            Object.values(Content.projects).map((group) => (
-              <div class="space-y-3">
-                <h3 class="text-sm font-semibold text-muted-foreground">
-                  {group.group}
-                </h3>
-                <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
-                  {Object.values(group.projects).map((project) => (
-                    <ProjectCard
-                      title={project.title}
-                      description={project.description}
-                      tags={project.techStack}
-                      link={project.link?.href}
-                    />
-                  ))}
-                </div>
-              </div>
-            ))
-          }
-        </div>
-      </Section>
     </section>
   </main>
 </Layout>
