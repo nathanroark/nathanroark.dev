@@ -16,13 +16,7 @@ const { src, alt, fallback, class: className = "" } = Astro.props;
   ]}
 >
   <div class="relative flex h-full w-full overflow-hidden rounded-full">
-    {/* eslint-disable-next-line astro/jsx-a11y/no-noninteractive-element-interactions -- img onerror exemption is case-sensitive, Astro needs lowercase */}
-    <img
-      src={src}
-      alt={alt}
-      class="aspect-square h-full w-full object-cover"
-      onerror={`this.style.display='none'; this.nextElementSibling.style.display='flex';`}
-    />
+    <img src={src} alt={alt} class="aspect-square h-full w-full object-cover" />
     <div class="hidden h-full w-full items-center justify-center rounded-full bg-muted text-muted-foreground font-medium">
       {fallback}
     </div>
