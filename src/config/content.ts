@@ -32,23 +32,25 @@ const Tools = {
   whiteboard: { name: "Excalidraw", link: "https://excalidraw.com/" },
 };
 
+const Certifications = {
+  securityPlus: {
+    name: "CompTIA Security+",
+    image: "/certs/comptia-security-ce-certification.png",
+    link: "https://www.credly.com/badges/56b33a6d-2577-4fea-ba33-2c463e140be2/public_url",
+  },
+  azureFundamentals: {
+    // name: "Microsoft Certified: Azure Fundamentals",
+    name: "Azure Fundamentals",
+    image: "/certs/ms-azure-fundamentals.png",
+    link: "https://learn.microsoft.com/en-us/users/nathanroark/transcript/vnmx3szej6owgn3",
+  },
+};
+
 // TODO: Break Content into sections
 
 export const Content = {
   general: General,
-  certifications: [
-    {
-      name: "CompTIA Security+",
-      image: "/certs/comptia-security-ce-certification.png",
-      link: "https://www.credly.com/badges/56b33a6d-2577-4fea-ba33-2c463e140be2/public_url",
-    },
-    {
-      // name: "Microsoft Certified: Azure Fundamentals",
-      name: "Azure Fundamentals",
-      image: "/certs/ms-azure-fundamentals.png",
-      link: "https://learn.microsoft.com/en-us/users/nathanroark/transcript/vnmx3szej6owgn3",
-    },
-  ],
+  certifications: Certifications,
   education: [
     {
       id: "uah-mscs-2025",

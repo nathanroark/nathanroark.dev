@@ -117,7 +117,7 @@ import { Icon as AstroIcon } from "astro-icon/components";
         </h2>
         <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
           {
-            Content.certifications.map((cert) => (
+            Object.values(Content.certifications).map((cert) => (
               <a
                 href={cert.link}
                 target="_blank"
