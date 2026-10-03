@@ -16,6 +16,7 @@ const { src, alt, fallback, class: className = "" } = Astro.props;
   ]}
 >
   <div class="relative flex h-full w-full overflow-hidden rounded-full">
+    {/* eslint-disable-next-line astro/jsx-a11y/no-noninteractive-element-interactions -- img onerror exemption is case-sensitive, Astro needs lowercase */}
     <img
       src={src}
       alt={alt}
