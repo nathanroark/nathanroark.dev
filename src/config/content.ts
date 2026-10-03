@@ -3,7 +3,7 @@ const General = {
   initials: "NR",
   location: "Seattle, Washington",
   locationLink: "https://www.google.com/maps/place/Seattle,+WA",
-  about: "Software Engineer",
+  about: "Full Stack Software Engineer",
   summary:
     "Software engineer living in Seattle. Creating things I want to exist. Working on things I find intesting.",
   avatarUrl: "/it-me.jpeg",
