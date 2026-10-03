@@ -33,7 +33,6 @@ export const siteConfig = {
     "Computer Engineer",
     "UAH",
     "University of Alabama in Huntsville",
-    "Telperion",
     "Web Development",
     "Software Development",
     "Modeling and Simulation",

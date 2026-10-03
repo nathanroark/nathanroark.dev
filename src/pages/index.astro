@@ -147,7 +147,7 @@ import { Icon as AstroIcon } from "astro-icon/components";
         <h2 class="border-b border-border pb-1.5 text-xl font-bold">Skills</h2>
         <div class="grid grid-cols-1 gap-3">
           {
-            Content.skills.map((group) => (
+            Object.values(Content.skills).map((group) => (
               <Card>
                 <CardHeader>
                   <h3 class="font-semibold leading-none">{group.group}</h3>
@@ -198,13 +198,13 @@ import { Icon as AstroIcon } from "astro-icon/components";
         </h2>
         <div class="space-y-6">
           {
-            Content.project_groups.map((group) => (
+            Object.values(Content.projects).map((group) => (
               <div class="space-y-3">
                 <h3 class="text-sm font-semibold text-muted-foreground">
                   {group.group}
                 </h3>
                 <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
-                  {group.projects.map((project) => (
+                  {Object.values(group.projects).map((project) => (
                     <ProjectCard
                       title={project.title}
                       description={project.description}
