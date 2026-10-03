@@ -11,13 +11,11 @@ const { name } = Astro.props;
 const iconId = TechIcons[name];
 ---
 
-{
-  iconId ? (
-    <span class="inline-flex items-center" title={name}>
-      <Icon name={iconId} class="h-5 w-auto" />
-      <span class="sr-only">{name}</span>
-    </span>
-  ) : (
-    <span class="font-mono text-[10px] text-muted-foreground">{name}</span>
-  )
-}
+{iconId ? (
+  <span class="inline-flex items-center" title={name}>
+    <Icon name={iconId} class="h-5 w-auto" />
+    <span class="sr-only">{name}</span>
+  </span>
+) : (
+  <span class="font-mono text-[10px] text-muted-foreground">{name}</span>
+)}

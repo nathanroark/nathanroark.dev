@@ -27,10 +27,10 @@ const Tag = link ? "a" : "div";
       {title}
     </h3>
   </div>
-  <p class="mt-1.5 font-mono text-xs text-muted-foreground">
-    {description}
-  </p>
+  <p class="mt-1.5 font-mono text-xs text-muted-foreground">{description}</p>
   <div class="mt-auto flex flex-wrap items-center gap-2.5 pt-3">
-    {tags.map((tag) => <TechIcon name={tag} />)}
+    {tags.map((tag) => (
+      <TechIcon name={tag} />
+    ))}
   </div>
 </Tag>

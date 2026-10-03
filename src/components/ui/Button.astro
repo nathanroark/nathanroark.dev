@@ -10,14 +10,12 @@ const classes =
   "inline-flex items-center justify-center rounded-xs border border-border bg-card text-card-foreground text-sm font-medium transition-colors hover-border-sunset";
 ---
 
-{
-  href ? (
-    <a href={href} class:list={[classes, className]}>
-      <slot />
-    </a>
-  ) : (
-    <button class:list={[classes, className]}>
-      <slot />
-    </button>
-  )
-}
+{href ? (
+  <a href={href} class:list={[classes, className]}>
+    <slot />
+  </a>
+) : (
+  <button class:list={[classes, className]}>
+    <slot />
+  </button>
+)}

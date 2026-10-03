@@ -18,17 +18,11 @@ import { Icon as AstroIcon } from "astro-icon/components";
       <!-- Header -->
       <div class="flex items-center justify-between">
         <div class="flex-1 space-y-1.5">
-          <h1 class="text-pretty text-4xl font-bold">
-            {Content.general.name}
-          </h1>
-          <p
-            class="max-w-md text-pretty font-mono text-sm text-muted-foreground"
-          >
+          <h1 class="text-pretty text-4xl font-bold">{Content.general.name}</h1>
+          <p class="max-w-md text-pretty font-mono text-sm text-muted-foreground">
             {Content.general.about}
           </p>
-          <p
-            class="max-w-md items-center text-pretty font-mono text-sm text-muted-foreground"
-          >
+          <p class="max-w-md items-center text-pretty font-mono text-sm text-muted-foreground">
             <a
               class="inline-flex items-center gap-x-1.5 align-baseline leading-none hover:underline"
               href={Content.general.locationLink}
@@ -39,23 +33,16 @@ import { Icon as AstroIcon } from "astro-icon/components";
               {Content.general.location}
             </a>
           </p>
-          <div
-            class="flex gap-1.5 pt-1 font-mono text-sm text-muted-foreground"
-          >
-            {
-              Content.general.contact.social.map((social) => (
-                <Button
-                  href={social.url}
-                  class="size-8"
-                >
-                  {social.name === "GitHub" ? (
-                    <AstroIcon name="simple-icons:github" class="h-5 w-auto" />
-                  ) : social.name === "atproto" ? (
-                    <AstroIcon name="simple-icons:bluesky" class="h-5 w-auto" />
-                  ) : null}
-                </Button>
-              ))
-            }
+          <div class="flex gap-1.5 pt-1 font-mono text-sm text-muted-foreground">
+            {Content.general.contact.social.map((social) => (
+              <Button href={social.url} class="size-8">
+                {social.name === "GitHub" ? (
+                  <AstroIcon name="simple-icons:github" class="h-5 w-auto" />
+                ) : social.name === "atproto" ? (
+                  <AstroIcon name="simple-icons:bluesky" class="h-5 w-auto" />
+                ) : null}
+              </Button>
+            ))}
           </div>
         </div>
 
@@ -81,25 +68,23 @@ import { Icon as AstroIcon } from "astro-icon/components";
           Projects
         </h2>
         <div class="space-y-6">
-          {
-            Object.values(Content.projects).map((group) => (
-              <div class="space-y-3">
-                <h3 class="text-sm font-semibold text-muted-foreground">
-                  {group.group}
-                </h3>
-                <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
-                  {Object.values(group.projects).map((project) => (
-                    <ProjectCard
-                      title={project.title}
-                      description={project.description}
-                      tags={project.techStack}
-                      link={project.link?.href}
-                    />
-                  ))}
-                </div>
+          {Object.values(Content.projects).map((group) => (
+            <div class="space-y-3">
+              <h3 class="text-sm font-semibold text-muted-foreground">
+                {group.group}
+              </h3>
+              <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
+                {Object.values(group.projects).map((project) => (
+                  <ProjectCard
+                    title={project.title}
+                    description={project.description}
+                    tags={project.techStack}
+                    link={project.link?.href}
+                  />
+                ))}
               </div>
-            ))
-          }
+            </div>
+          ))}
         </div>
       </Section>
 
@@ -107,52 +92,45 @@ import { Icon as AstroIcon } from "astro-icon/components";
       <Section>
         <h2 class="border-b border-border pb-1.5 text-xl font-bold">Skills</h2>
         <div class="grid grid-cols-1 gap-3">
-          {
-            Object.values(Content.skills).map((group) => (
-              <Card>
-                <CardHeader>
-                  <h3 class="font-semibold leading-none">{group.group}</h3>
-                </CardHeader>
-                <CardContent class="mt-2">
-                  <div class="flex flex-wrap gap-1">
-                    {group.items.map((skill) => (
-                      <SkillBadge name={skill} />
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            ))
-          }
+          {Object.values(Content.skills).map((group) => (
+            <Card>
+              <CardHeader>
+                <h3 class="font-semibold leading-none">{group.group}</h3>
+              </CardHeader>
+              <CardContent class="mt-2">
+                <div class="flex flex-wrap gap-1">
+                  {group.items.map((skill) => (
+                    <SkillBadge name={skill} />
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </Section>
-
-
 
       <!-- Tools -->
       <Section>
         <h2 class="border-b border-border pb-1.5 text-xl font-bold">Tools</h2>
         <div class="grid grid-cols-2 gap-3 md:grid-cols-3">
-         {
-  Object.values(Content.tools).map((tool) => {
-    const Tag = tool.link ? "a" : "div";
-    return (
-      <Tag
-        href={tool.link}
-        target={tool.link && "_blank"}
-        rel={tool.link && "noopener noreferrer"}
-        class="rounded-md flex flex-col gap-1 border border-border bg-card p-3 transition-all hover-border-sunset"
-      >
-        <span class="font-mono text-xs text-muted-foreground">
-          {tool.label}
-        </span>
-        <span class="truncate text-sm font-semibold leading-tight">
-          {tool.name}
-        </span>
-      </Tag>
-    );
-  })
-}
-
+          {Object.values(Content.tools).map((tool) => {
+            const Tag = tool.link ? "a" : "div";
+            return (
+              <Tag
+                href={tool.link}
+                target={tool.link && "_blank"}
+                rel={tool.link && "noopener noreferrer"}
+                class="rounded-md flex flex-col gap-1 border border-border bg-card p-3 transition-all hover-border-sunset"
+              >
+                <span class="font-mono text-xs text-muted-foreground">
+                  {tool.label}
+                </span>
+                <span class="truncate text-sm font-semibold leading-tight">
+                  {tool.name}
+                </span>
+              </Tag>
+            );
+          })}
         </div>
       </Section>
 
@@ -162,32 +140,28 @@ import { Icon as AstroIcon } from "astro-icon/components";
           Education
         </h2>
         <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
-          {
-            Object.values(Content.education).map((education) => (
-              <Card>
-                <CardHeader>
-                  <div class="flex items-center justify-between gap-x-2 text-base">
-                    <h3 class="font-semibold leading-none">
-                      {education.degree}
-                    </h3>
-                    <div class="text tabular-nums text-muted-foreground font-mono text-xs">
-                      {education.extra}
-                    </div>
+          {Object.values(Content.education).map((education) => (
+            <Card>
+              <CardHeader>
+                <div class="flex items-center justify-between gap-x-2 text-base">
+                  <h3 class="font-semibold leading-none">{education.degree}</h3>
+                  <div class="text tabular-nums text-muted-foreground font-mono text-xs">
+                    {education.extra}
                   </div>
-                </CardHeader>
-                <CardContent class="mt-2">
-                  <div class="flex items-center justify-between gap-x-2">
-                    <h3 class="leading-none text-xs text-muted-foreground">
-                      {education.school}
-                    </h3>
-                    <!-- <div class="text-sm tabular-nums text-muted-foreground"> -->
-                    <!--   {education.year} -->
-                    <!-- </div> -->
-                  </div>
-                </CardContent>
-              </Card>
-            ))
-          }
+                </div>
+              </CardHeader>
+              <CardContent class="mt-2">
+                <div class="flex items-center justify-between gap-x-2">
+                  <h3 class="leading-none text-xs text-muted-foreground">
+                    {education.school}
+                  </h3>
+                  <!-- <div class="text-sm tabular-nums text-muted-foreground"> -->
+                  <!--   {education.year} -->
+                  <!-- </div> -->
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </Section>
 
@@ -197,29 +171,27 @@ import { Icon as AstroIcon } from "astro-icon/components";
           Certifications
         </h2>
         <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
-          {
-            Object.values(Content.certifications).map((cert) => (
-              <a
-                href={cert.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="rounded-md group flex items-center gap-3 border border-border bg-card p-3 transition-all hover-border-sunset"
-              >
-                <div class="flex size-10 items-center justify-center">
-                  <img
-                    src={cert.image}
-                    alt={cert.name}
-                    class="size-full object-contain"
-                  />
-                </div>
-                <div class="flex min-w-0 flex-1 flex-col">
-                  <span class="truncate text-sm font-semibold leading-tight">
-                    {cert.name}
-                  </span>
-                </div>
-              </a>
-            ))
-          }
+          {Object.values(Content.certifications).map((cert) => (
+            <a
+              href={cert.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-md group flex items-center gap-3 border border-border bg-card p-3 transition-all hover-border-sunset"
+            >
+              <div class="flex size-10 items-center justify-center">
+                <img
+                  src={cert.image}
+                  alt={cert.name}
+                  class="size-full object-contain"
+                />
+              </div>
+              <div class="flex min-w-0 flex-1 flex-col">
+                <span class="truncate text-sm font-semibold leading-tight">
+                  {cert.name}
+                </span>
+              </div>
+            </a>
+          ))}
         </div>
       </Section>
 
