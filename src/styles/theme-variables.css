@@ -1,13 +1,23 @@
 /* Maps the palette onto Tailwind's --color-* names */
 @theme inline {
+  /* Fonts */
+  /* ----------------------------------------------------------------------- */
+  /* TODO: Find a better font */
   --font-sans:
     ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", sans-serif;
+  /* TODO: Find a better font */
   --font-mono:
     ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
+
+  /* Variables */
+  /* ----------------------------------------------------------------------- */
   --radius-xs: 0.25rem;
   --radius-md: calc(var(--radius) - 3px);
+
+  /* Color Variables */
+  /* ----------------------------------------------------------------------- */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);

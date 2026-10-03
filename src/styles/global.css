@@ -1,8 +1,8 @@
 /* Tailwind first is required */
 /* Why: creates layer the other item append to */
-/* ------------------------ */
+/* --------------------------------- */
 @import "tailwindcss";
-/* ------------------------ */
+/* --------------------------------- */
 
 @import "./theme-variables.css";
 @import "./color-palette.css";
