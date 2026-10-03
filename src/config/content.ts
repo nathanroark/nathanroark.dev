@@ -32,6 +32,23 @@ const Tools = {
   whiteboard: { name: "Excalidraw", link: "https://excalidraw.com/" },
 };
 
+const Education = {
+  csMasters: {
+    id: "uah-mscs-2025",
+    school: "University of Alabama in Huntsville",
+    degree: "Masters in Computer Science",
+    year: "December 2025",
+    extra: "GPA 4.0",
+  },
+  cpeBachelors: {
+    id: "uah-bsce-2020",
+    school: "University of Alabama in Huntsville",
+    degree: "Bachelors in Computer Engineering",
+    year: "December 2020",
+    extra: "GPA 3.6",
+  },
+};
+
 const Certifications = {
   securityPlus: {
     name: "CompTIA Security+",
@@ -51,22 +68,7 @@ const Certifications = {
 export const Content = {
   general: General,
   certifications: Certifications,
-  education: [
-    {
-      id: "uah-mscs-2025",
-      school: "University of Alabama in Huntsville",
-      degree: "Masters in Computer Science",
-      year: "December 2025",
-      extra: "GPA 4.0",
-    },
-    {
-      id: "uah-bsce-2020",
-      school: "University of Alabama in Huntsville",
-      degree: "Bachelors in Computer Engineering",
-      year: "December 2020",
-      extra: "GPA 3.6",
-    },
-  ],
+  education: Education,
   skills: [
     {
       group: "Languages",
