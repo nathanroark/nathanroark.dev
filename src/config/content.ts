@@ -145,6 +145,29 @@ const Skills = {
 };
 
 const Projects = {
+  basic: {
+    group: "Basic Projects",
+    projects: {
+      developerPortfolio: {
+        title: "Developer Portfolio",
+        description: "This website ༼ つ ◕_◕ ༽つ",
+        techStack: ["Astro", "TypeScript", "Tailwind"],
+        link: {
+          label: "nathanroark.dev",
+          href: "https://nathanroark.dev",
+        },
+      },
+      mediaBlog: {
+        title: "Media Blog",
+        description: "Static blog for media and sometimes my thoughts about it",
+        techStack: ["Astro", "TypeScript", "Tailwind", "Markdown"],
+        link: {
+          label: "nathanroark.com",
+          href: "https://nathanroark.com",
+        },
+      },
+    },
+  },
   fullStack: {
     group: "Full Stack Projects",
     projects: {
@@ -245,29 +268,6 @@ const Projects = {
         link: {
           label: "wolf-sheep-predation.nathanroark.dev",
           href: "https://github.com/nathanroark/wolf-sheep-predation",
-        },
-      },
-    },
-  },
-  basic: {
-    group: "Basic Projects",
-    projects: {
-      mediaBlog: {
-        title: "Media Blog",
-        description: "Static blog for media and sometimes thoughts about it",
-        techStack: ["Astro", "TypeScript", "Tailwind", "Markdown"],
-        link: {
-          label: "nathanroark.com",
-          href: "https://nathanroark.com",
-        },
-      },
-      developerPortfolio: {
-        title: "Developer Portfolio",
-        description: "This website ༼ つ ◕_◕ ༽つ",
-        techStack: ["Astro", "TypeScript", "Tailwind"],
-        link: {
-          label: "nathanroark.dev",
-          href: "https://nathanroark.dev",
         },
       },
     },
