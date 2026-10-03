@@ -25,11 +25,11 @@ const General = {
 };
 
 const Tools = {
-  textEditor: { name: "neovim", link: "" },
-  terminalMultiplexer: { name: "tmux", link: "" },
-  theme: { name: "sora", link: "" },
-  noteTaker: { name: "Notion", link: "" },
-  whiteboard: { name: "Excalidraw", link: "" },
+  textEditor: { name: "neovim", link: "https://neovim.io/" },
+  terminalMultiplexer: { name: "tmux", link: "https://tmux.app/" },
+  theme: { name: "sora", link: "https://soratheme.com/" },
+  noteTaker: { name: "Notion", link: "https://www.notion.com/" },
+  whiteboard: { name: "Excalidraw", link: "https://excalidraw.com/" },
 };
 
 // TODO: Break Content into sections
