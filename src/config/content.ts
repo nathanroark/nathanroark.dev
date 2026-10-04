@@ -331,7 +331,7 @@ const Projects = {
       cosmos: {
         title: "Cosmos",
         description:
-          "Space knowledge explorer. Browse planets, moons, galaxies, and space missions. All with beautiful images from NASA.",
+          "Space knowledge explorer. Browse planets, moons, galaxies, and space missions",
         techStack: ["Tanstack Start", "React", "TypeScript", "Tailwind"],
         link: {
           label: "cosmos.foo",
@@ -341,7 +341,7 @@ const Projects = {
       dataVizDemos: {
         title: "Data Visualization Demos",
         description:
-          "Collection of interactive demos, each self-contained and custom-built.",
+          "Collection of interactive demos, each self-contained and custom-built",
         techStack: ["Tanstack Start", "React", "D3", "TypeScript", "Tailwind"],
         link: {
           label: "data-viz.nathanroark.dev",
@@ -351,7 +351,7 @@ const Projects = {
       audioVisualizer: {
         title: "Audio Visualizer",
         description:
-          "Visualize audio input into the browser with various graphs.",
+          "Visualize audio input into the browser with various graphs",
         techStack: ["React", "TypeScript", "Tailwind"],
         link: {
           label: "audio-visualizer.nathanroark.dev",
@@ -360,7 +360,7 @@ const Projects = {
       },
       pongWars: {
         title: "Pong Wars",
-        description: "Pong Wars rendered on Canvas.",
+        description: "Pong Wars rendered on Canvas",
         techStack: ["Svelte", "TypeScript", "Tailwind"],
         link: {
           label: "pong-wars.nathanroark.dev",
@@ -369,7 +369,7 @@ const Projects = {
       },
       coverflow: {
         title: "Coverflow",
-        description: "Demo site for a smooth coverflow UI.",
+        description: "Demo site for a smooth coverflow UI",
         techStack: [
           "Next.js",
           "TypeScript",
