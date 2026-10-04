@@ -1,6 +1,6 @@
 # nathanroark.dev
 
-My personal site: [nathanroark.dev](https://nathanroark.dev)
+My developer site: [nathanroark.dev](https://nathanroark.dev)
 
 Built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com)
 
