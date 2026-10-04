@@ -1,0 +1,18 @@
+---
+import { Icon } from "astro-icon/components";
+import Badge from "@/components/ui/Badge.astro";
+import { IconConfig } from "@/config/icon-config";
+
+interface Props {
+  name: string;
+}
+
+const { name } = Astro.props;
+
+const iconId = IconConfig[name];
+---
+
+<Badge class="gap-1.5 font-mono text-xs font-medium">
+  {iconId && <Icon name={iconId} class="h-3 w-auto" />}
+  {name}
+</Badge>

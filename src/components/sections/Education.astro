@@ -1,0 +1,35 @@
+---
+import Section from "@/components/ui/Section.astro";
+import Card from "@/components/ui/Card.astro";
+import CardHeader from "@/components/ui/CardHeader.astro";
+import CardContent from "@/components/ui/CardContent.astro";
+import { Content } from "@/config/content.ts";
+import { Icon as AstroIcon } from "astro-icon/components";
+---
+
+<Section title="Education">
+  <div class="grid gap-3 md:grid-cols-2">
+    {Object.values(Content.education).map((education) => (
+      <Card class="flex items-center pl-4">
+        <AstroIcon
+          name={education.logo}
+          class="h-auto w-10 -mx-1 shrink-0 text-muted-foreground"
+        />
+        <div class="min-w-0">
+          <CardHeader>
+            <div class="flex items-center justify-between gap-x-2 text-base">
+              <h3 class="font-semibold leading-none">{education.degree}</h3>
+            </div>
+          </CardHeader>
+          <CardContent class="mt-2">
+            <div class="flex items-center justify-between gap-x-2">
+              <h3 class="leading-none text-xs text-muted-foreground">
+                {education.school}
+              </h3>
+            </div>
+          </CardContent>
+        </div>
+      </Card>
+    ))}
+  </div>
+</Section>

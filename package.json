@@ -1,0 +1,34 @@
+{
+  "name": "nathanroark-dev",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "prettier --write .",
+    "lint": "astro check && eslint . && prettier --check ."
+  },
+  "dependencies": {
+    "@iconify-json/logos": "^1.2.15",
+    "@iconify-json/lucide": "^1.2.139",
+    "@iconify-json/simple-icons": "^1.2.98",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.3.5",
+    "astro-icon": "^1.2.0",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.12.0",
+    "eslint-plugin-astro": "^3.2.1",
+    "eslint-plugin-jsx-a11y-x": "^0.2.0",
+    "prettier": "^3.9.9",
+    "prettier-plugin-astro": "^1.1.0",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "typescript": "^6",
+    "typescript-eslint": "^8.71.0"
+  }
+}

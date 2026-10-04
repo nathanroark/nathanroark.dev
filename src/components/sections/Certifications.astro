@@ -1,0 +1,28 @@
+---
+import Section from "@/components/ui/Section.astro";
+import { Content } from "@/config/content.ts";
+import { Image } from "astro:assets";
+---
+
+<Section title="Certifications">
+  <div class="grid gap-3 md:grid-cols-2">
+    {Object.values(Content.certifications).map((cert) => (
+      <a
+        href={cert.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center gap-3 rounded-md border bg-card p-3 transition-colors hover:border-accent"
+      >
+        <Image
+          src={cert.image}
+          alt={cert.name}
+          width={80}
+          class="size-10 object-contain"
+        />
+        <span class="truncate text-sm font-semibold leading-tight">
+          {cert.name}
+        </span>
+      </a>
+    ))}
+  </div>
+</Section>

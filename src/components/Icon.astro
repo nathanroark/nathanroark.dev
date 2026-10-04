@@ -1,0 +1,21 @@
+---
+import { Icon } from "astro-icon/components";
+import { IconConfig } from "@/config/icon-config";
+
+interface Props {
+  name: string;
+}
+
+const { name } = Astro.props;
+
+const iconId = IconConfig[name];
+---
+
+{iconId ? (
+  <span class="inline-flex items-center" title={name}>
+    <Icon name={iconId} class="h-5 w-auto" />
+    <span class="sr-only">{name}</span>
+  </span>
+) : (
+  <span class="font-mono text-[10px] text-muted-foreground">{name}</span>
+)}

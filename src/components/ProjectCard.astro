@@ -1,0 +1,32 @@
+---
+import Icon from "@/components/Icon.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  tags: readonly string[];
+  link?: string;
+}
+
+const { title, description, tags, link } = Astro.props;
+
+const Tag = link ? "a" : "div";
+---
+
+<Tag
+  href={link}
+  target={link ? "_blank" : undefined}
+  rel={link ? "noopener noreferrer" : undefined}
+  class:list={[
+    "flex flex-col rounded-md border bg-card p-3",
+    link && "transition-colors hover:border-accent",
+  ]}
+>
+  <h3 class="leading-tight font-semibold tracking-tight">{title}</h3>
+  <p class="mt-1.5 font-mono text-xs text-muted-foreground">{description}</p>
+  <div class="mt-auto flex flex-wrap items-center gap-2.5 pt-3">
+    {tags.map((tag) => (
+      <Icon name={tag} />
+    ))}
+  </div>
+</Tag>

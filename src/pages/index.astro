@@ -1,0 +1,26 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Hero from "@/components/sections/Hero.astro";
+import About from "@/components/sections/About.astro";
+import Projects from "@/components/sections/Projects.astro";
+import Skills from "@/components/sections/Skills.astro";
+import Education from "@/components/sections/Education.astro";
+import Certifications from "@/components/sections/Certifications.astro";
+import Tools from "@/components/sections/Tools.astro";
+import Footer from "@/components/sections/Footer.astro";
+---
+
+<Layout>
+  <main class="px-2 py-4 md:py-16">
+    <section class="mx-auto max-w-3xl space-y-8">
+      <Hero />
+      <About />
+      <Projects />
+      <Skills />
+      <Education />
+      <Certifications />
+      <Tools />
+      <Footer />
+    </section>
+  </main>
+</Layout>

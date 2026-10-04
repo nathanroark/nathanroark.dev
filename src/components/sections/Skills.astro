@@ -1,0 +1,27 @@
+---
+import Section from "@/components/ui/Section.astro";
+import Card from "@/components/ui/Card.astro";
+import CardHeader from "@/components/ui/CardHeader.astro";
+import CardContent from "@/components/ui/CardContent.astro";
+import SkillBadge from "@/components/SkillBadge.astro";
+import { Content } from "@/config/content.ts";
+---
+
+<Section title="Skills">
+  <div class="grid gap-3">
+    {Object.values(Content.skills).map((group) => (
+      <Card>
+        <CardHeader>
+          <h3 class="font-semibold leading-none">{group.group}</h3>
+        </CardHeader>
+        <CardContent class="mt-2">
+          <div class="flex flex-wrap gap-1">
+            {group.items.map((skill) => (
+              <SkillBadge name={skill} />
+            ))}
+          </div>
+        </CardContent>
+      </Card>
+    ))}
+  </div>
+</Section>

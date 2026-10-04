@@ -1,0 +1,44 @@
+---
+import Button from "@/components/ui/Button.astro";
+import Avatar from "@/components/ui/Avatar.astro";
+import { Content } from "@/config/content.ts";
+import { Icon as AstroIcon } from "astro-icon/components";
+---
+
+<div class="flex items-center justify-between">
+  <div class="flex-1 space-y-1.5">
+    <h1 class="text-pretty text-4xl font-bold">{Content.general.name}</h1>
+    <p class="max-w-md text-pretty font-mono text-sm text-muted-foreground">
+      {Content.general.about}
+    </p>
+    <p class="max-w-md text-pretty font-mono text-sm text-muted-foreground">
+      <a
+        class="inline-flex items-center gap-x-1.5 transition-colors hover:text-accent"
+        href={Content.general.locationLink}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <AstroIcon name="lucide:globe" class="h-5 w-auto" />
+        {Content.general.location}
+      </a>
+    </p>
+    <div class="flex gap-1.5 pt-1">
+      {Content.general.contact.social.map((social) => (
+        <Button href={social.url} aria-label={social.name} class="size-8">
+          {social.name === "GitHub" ? (
+            <AstroIcon name="simple-icons:github" class="h-5 w-auto" />
+          ) : social.name === "atproto" ? (
+            <AstroIcon name="simple-icons:bluesky" class="h-5 w-auto" />
+          ) : null}
+        </Button>
+      ))}
+    </div>
+  </div>
+
+  <Avatar
+    src={Content.general.avatar}
+    alt={Content.general.name}
+    fallback={Content.general.initials}
+    class="ml-1 size-30"
+  />
+</div>
