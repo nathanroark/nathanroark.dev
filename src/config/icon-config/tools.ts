@@ -10,4 +10,5 @@ export const ToolIcons: Record<string, string> = {
   Helm: "simple-icons:helm",
   Cloudflare: "logos:cloudflare-icon",
   Azure: "logos:microsoft-azure",
+  "VS Code": "logos:visual-studio-code",
 };

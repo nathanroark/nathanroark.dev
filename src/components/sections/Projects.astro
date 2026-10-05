@@ -14,10 +14,10 @@ import { Content } from "@/config/content.ts";
         <div class="grid gap-3 md:grid-cols-2">
           {Object.values(group.projects).map((project) => (
             <ProjectCard
-              title={project.title}
+              name={project.name}
               description={project.description}
               tags={project.techStack}
-              link={project.link?.href}
+              link={project.link}
             />
           ))}
         </div>
