@@ -277,155 +277,155 @@ type Tool = {
 
 type ToolGroup = {
   group: string;
-  tools: Record<string, Tool>;
+  tools: Tool[];
 };
 
-const Tools: Record<string, ToolGroup> = {
-  development: {
+const Tools: ToolGroup[] = [
+  {
     group: "Development",
-    tools: {
-      textEditor: {
+    tools: [
+      {
         label: "Editor",
         name: "Neovim",
         icon: "simple-icons:neovim",
         link: "https://neovim.io/",
       },
-      terminalMultiplexer: {
+      {
         label: "Terminal Multiplexer",
         name: "Tmux",
         icon: "simple-icons:tmux",
         link: "https://tmux.app/",
       },
-      tmuxConfig: {
+      {
         label: "Tmux Config",
         name: "Oh My Tmux",
         icon: "ohmytmux",
         link: "https://github.com/gpakosz/.tmux",
       },
-      gitClient: {
+      {
         label: "Git",
         name: "LazyGit",
         icon: "simple-icons:git",
         link: "https://github.com/jesseduffield/lazygit",
       },
-      ls: {
+      {
         label: "Better ls",
         name: "lsd",
         icon: "lucide:folder-tree",
         link: "https://github.com/lsd-rs/lsd",
       },
-      dotfiles: {
+      {
         label: "Dotfiles",
         name: "GNU Stow",
         icon: "lucide:link",
         link: "https://www.gnu.org/software/stow/",
       },
-    },
+    ],
   },
-  terminal: {
+  {
     group: "Terminal",
-    tools: {
-      terminal: {
+    tools: [
+      {
         label: "Terminal",
         name: "WezTerm",
         icon: "simple-icons:wezterm",
         link: "https://wezterm.org/",
       },
-      shell: {
+      {
         label: "Shell",
         name: "Zsh",
         icon: "simple-icons:zsh",
         link: "https://www.zsh.org/",
       },
-      prompt: {
+      {
         label: "Prompt",
         name: "Oh My Posh",
         icon: "ohmyposh",
         link: "https://ohmyposh.dev/",
       },
-      shellHistory: {
+      {
         label: "History",
         name: "Atuin",
         icon: "atuin",
         link: "https://atuin.sh/",
       },
-      font: {
+      {
         label: "Font",
         name: "Maple Mono Nerd Font",
         icon: "maple",
         link: "https://font.subf.dev/",
       },
-      theme: {
+      {
         label: "Theme",
         name: "Sora",
         icon: "lucide:palette",
         link: "https://soratheme.com/",
       },
-    },
+    ],
   },
-  notes: {
+  {
     group: "Notes & Diagrams",
-    tools: {
-      noteTaker: {
+    tools: [
+      {
         label: "Notes",
         name: "Notion",
         icon: "simple-icons:notion",
         link: "https://www.notion.com/",
       },
-      localNotes: {
+      {
         label: "Local Notes",
         name: "Obsidian",
         icon: "simple-icons:obsidian",
         link: "https://obsidian.md/",
       },
-      whiteboard: {
+      {
         label: "Whiteboard",
         name: "Excalidraw",
         icon: "simple-icons:excalidraw",
         link: "https://excalidraw.com/",
       },
-      diagrams: {
+      {
         label: "UML Diagrams",
         name: "PlantUML",
         icon: "plantuml",
         link: "https://plantuml.com/",
       },
-    },
+    ],
   },
-  hosting: {
+  {
     group: "Hosting",
-    tools: {
-      hosting: {
+    tools: [
+      {
         label: "Hosting",
         name: "Cloudflare",
         icon: "simple-icons:cloudflare",
         link: "https://www.cloudflare.com/",
       },
-      domains: {
+      {
         label: "Domains",
         name: "Porkbun",
         icon: "simple-icons:porkbun",
         link: "https://porkbun.com/",
       },
-    },
+    ],
   },
-  hardware: {
+  {
     group: "Hardware",
-    tools: {
-      laptop: {
+    tools: [
+      {
         label: "Laptop",
         name: "MacBook Pro M2 Max",
         icon: "simple-icons:apple",
       },
-      keyboard: {
+      {
         label: "Keyboard",
         name: "Moonlander",
         icon: "moonlander",
         link: "https://www.zsa.io/moonlander",
       },
-    },
+    ],
   },
-};
+];
 
 export const Content = {
   general: General,
