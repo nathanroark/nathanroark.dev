@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>svg:root{color-scheme:light dark}.logo-n{fill:var(--logo-n,light-dark(#0f2b3d,#e5edf2))}.logo-bowl{fill:var(--logo-bowl,light-dark(#9980fa,#b4a5ff))}.logo-leg{fill:var(--logo-leg,light-dark(#f0826c,#ff9c86))}</style>
+  <path class="logo-n" d="M4 28 4 4 16 28Z"/>
+  <path class="logo-bowl" d="M16 4 28 10 16 16Z"/>
+  <path class="logo-leg" d="M16 16 28 28 16 28Z"/>
+</svg>

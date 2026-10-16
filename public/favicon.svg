@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>.s4-n{fill:#0f2b3d}.s4-bowl{fill:#9980fa}.s4-leg{fill:#f0826c}@media (prefers-color-scheme:dark){.s4-n{fill:#e5edf2}.s4-bowl{fill:#b4a5ff}.s4-leg{fill:#ff9c86}}</style>
+  <path d="M4 28 4 4 16 28Z" class="s4-n"/>
+  <path d="M16 4 28 10 16 16Z" class="s4-bowl"/>
+  <path d="M16 16 28 28 16 28Z" class="s4-leg"/>
+</svg>
