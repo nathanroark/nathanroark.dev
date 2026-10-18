@@ -55,7 +55,7 @@ const Projects: Record<string, ProjectGroup> = {
       dataVizDemos: {
         name: "Data Visualization Demos",
         description:
-          "Collection of interactive demos, each self-contained and custom-built.",
+          "A small collection of interactive visualizations, each self-contained custom-built, and type-safe",
         link: "https://data-viz.nathanroark.dev",
         techStack: ["Tanstack Start", "React", "D3", "TypeScript", "Tailwind"],
       },
