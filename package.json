@@ -11,24 +11,24 @@
     "lint": "astro check && eslint . && prettier --check ."
   },
   "dependencies": {
-    "@iconify-json/logos": "^1.2.15",
-    "@iconify-json/lucide": "^1.2.139",
-    "@iconify-json/simple-icons": "^1.2.98",
+    "@iconify-json/logos": "^1.2.17",
+    "@iconify-json/lucide": "^1.2.147",
+    "@iconify-json/simple-icons": "^1.2.100",
     "@tailwindcss/vite": "^4.3.3",
-    "astro": "7.4.0",
+    "astro": "7.4.2",
     "astro-icon": "^1.2.0",
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.10",
+    "@astrojs/check": "^0.9.12",
     "@eslint/js": "^10.0.1",
-    "eslint": "^10.12.0",
+    "eslint": "^10.13.0",
     "eslint-plugin-astro": "^3.2.1",
     "eslint-plugin-jsx-a11y-x": "^0.2.0",
-    "prettier": "^3.9.9",
-    "prettier-plugin-astro": "^1.1.0",
+    "prettier": "^3.9.10",
+    "prettier-plugin-astro": "^1.1.1",
     "prettier-plugin-tailwindcss": "^0.8.1",
-    "typescript": "^6",
-    "typescript-eslint": "^8.71.0"
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.0"
   }
 }
