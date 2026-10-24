@@ -32,7 +32,7 @@
   color-scheme: dark;
   --background: oklch(0.16 0.022 258);
   --foreground: oklch(0.985 0.004 240);
-  --card: oklch(0.18 0.022 260 / 40%);
+  --card: oklch(0.18 0.02 260 / 80%);
   --card-foreground: oklch(0.985 0.004 240);
   --popover: oklch(0.18 0.022 260);
   --popover-foreground: oklch(0.985 0.004 240);
@@ -42,12 +42,12 @@
   --secondary-foreground: oklch(0.985 0.004 240);
   --muted: oklch(1 0 0 / 10%);
   --muted-foreground: oklch(0.78 0.012 240);
-  --accent: oklch(0.7 0.1 290);
+  --accent: oklch(72% 0.08 273);
   --accent-foreground: oklch(0.985 0.004 240);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0.018 240 / 24%);
+  --border: oklch(1 0.018 240 / 14%);
   --input: oklch(1 0.018 240 / 30%);
-  --ring: oklch(0.7 0.1 290);
+  --ring: oklch(72% 0.08 273);
   --bg-1: oklch(0.17 0.022 258);
   --bg-2: oklch(0.2 0.026 266);
   --bg-3: oklch(0.22 0.024 272);
